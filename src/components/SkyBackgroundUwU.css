@@ -1,0 +1,22 @@
+.cloud {
+  animation: move 10s infinite linear;
+}
+
+@keyframes move {
+    0%   {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(calc(-100vw - 100%)); /* full screen + cloud width */
+    }
+}
+
+.cloud {
+  position: absolute;
+}
+
+#background {
+  overflow: hidden;
+}
