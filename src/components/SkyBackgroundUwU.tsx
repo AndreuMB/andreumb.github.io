@@ -37,7 +37,6 @@ function SkyBackgroundUwU() {
       });
       newClouds.push(cloud);
     }
-    console.log(newClouds);
     setClouds(newClouds);
   }, []);
 

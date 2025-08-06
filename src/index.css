@@ -9,6 +9,7 @@
   --button-bg: #000000; */
 
   --primary-color: #9ADDFF;
+  --primary-light-color: #3db1ec;
   --secondary-color: #d6c9c9;
   --secondary-light-color: #e8eef2;
   --terciary-color: #77b6ea;
@@ -22,10 +23,17 @@
   --button-bg: #f9f9f9; */
 
   --primary-color: #0f0e1e;
-  --secondary-color: #84dcc6;
+  --primary-light-color: #8175fe;
+
+  /* --secondary-color: #84dcc6;
   --secondary-light-color: #a5ffd6;
   --terciary-color: #ff686b;
-  --terciary-light-color: #ffa69e;
+  --terciary-light-color: #ffa69e; */
+
+  --secondary-color: #F694C1;
+  --secondary-light-color: #E4C1F9;
+  --terciary-color: #ECDD7B;
+  --terciary-light-color: #A9DEF9;
 }
 
 
@@ -33,9 +41,10 @@ body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  padding: 2em;
 
   color-scheme: light dark;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   background-color: var(--primary-color);
 
   font-synthesis: none;
@@ -79,9 +88,13 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: var(--terciary-light-color);
+  border-color: var(--secondary-light-color);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+footer {
+  color: var(--secondary-color);
 }

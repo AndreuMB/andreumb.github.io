@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer>
+    <footer className="fixed left-0 bottom-1 w-full text-center">
       <p>&copy; Made by AndreuMB</p>
     </footer>
   );

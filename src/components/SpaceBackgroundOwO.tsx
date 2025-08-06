@@ -26,7 +26,6 @@ function SpaceBackgroundOwO() {
       );
       newStars.push(star);
     }
-    console.log(newStars);
     setStars(newStars);
   }, []);
 

@@ -1,13 +1,15 @@
+import './Header.css';
+
 function Header() {
   return (
     <header>
-      <h1>Test</h1>
+      <h1>PORTFOLIO</h1>
       <nav>
         <ul>
-          <li>i1</li>
-          <li>2i</li>
-          <li>i3</li>
-          <li>i4</li>
+          <li>About me</li>
+          <li>Projects</li>
+          <li>Fun</li>
+          <li>Contact</li>
         </ul>
       </nav>
     </header>
