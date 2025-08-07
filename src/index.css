@@ -1,5 +1,12 @@
 @import "tailwindcss";
-
+@theme  inline {
+  --color-primary: var(--primary-color);
+  --color-primary-light: var(--primary-light-color);
+  --color-secondary: var(--secondary-color);
+  --color-secondary-light: var(--secondary-light-color);
+  --color-terciary: var(--terciary-color);
+  --color-terciary-light: var(--terciary-light-color);
+}
 /* @custom-variant dark (&:where(.dark, .dark *)); */
 
 .light {
@@ -9,10 +16,10 @@
   --button-bg: #000000; */
 
   --primary-color: #9ADDFF;
-  --primary-light-color: #3db1ec;
-  --secondary-color: #d6c9c9;
+  --primary-light-color: #77b6eae3;
+  --secondary-color: #2E2E3A;
   --secondary-light-color: #e8eef2;
-  --terciary-color: #77b6ea;
+  --terciary-color: #3db1ec;
   --terciary-light-color: #c7d3dd;
 }
 
@@ -23,16 +30,18 @@
   --button-bg: #f9f9f9; */
 
   --primary-color: #0f0e1e;
-  --primary-light-color: #8175fe;
+  --primary-light-color: #5650aad0;
+  /* --primary-light-color: #55509e; */
+  /* --primary-light-color: #8175fe; */
 
   /* --secondary-color: #84dcc6;
   --secondary-light-color: #a5ffd6;
   --terciary-color: #ff686b;
   --terciary-light-color: #ffa69e; */
 
-  --secondary-color: #F694C1;
+  --secondary-color: #ECDD7B;
   --secondary-light-color: #E4C1F9;
-  --terciary-color: #ECDD7B;
+  --terciary-color: #b9b9b9;
   --terciary-light-color: #A9DEF9;
 }
 
@@ -51,6 +60,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 a {
@@ -67,8 +77,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 h1 {
@@ -83,7 +92,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--terciary-color);
+  background-color: var(--primary-light-color);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -97,4 +106,22 @@ button:focus-visible {
 
 footer {
   color: var(--secondary-color);
+}
+
+*::selection {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  /* color: var(--primary-light-color); */
+}
+
+.simple-button {
+  padding: 0;
+  display: inline;
+  width: auto;
+  border: none;
+}
+
+.simple-button:hover {
+  background-color: transparent;
+  border: none;
 }

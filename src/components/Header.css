@@ -1,9 +1,30 @@
 header {
-  color:var(--secondary-color);
+  color: var(--primary-color);
 }
 
-nav {
+nav button {
+  border-radius: 0;
+  width: 100%;
+  text-align: left;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav button:hover {
   background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 1em;
+}
+
+button .description {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+button:hover .description {
+  max-height: 100px; /* You can adjust based on expected content size */
+  opacity: 1;
 }
