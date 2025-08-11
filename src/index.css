@@ -30,7 +30,7 @@
   --button-bg: #f9f9f9; */
 
   --primary-color: #0f0e1e;
-  --primary-light-color: #5650aad0;
+  --primary-light-color: #6c66c8d0;
   /* --primary-light-color: #55509e; */
   /* --primary-light-color: #8175fe; */
 
@@ -40,14 +40,14 @@
   --terciary-light-color: #ffa69e; */
 
   --secondary-color: #ECDD7B;
-  --secondary-light-color: #E4C1F9;
-  --terciary-color: #b9b9b9;
-  --terciary-light-color: #A9DEF9;
+  --secondary-light-color: #b9b9b9;
+  --terciary-color: #dca8fb;
+  --terciary-light-color: #ff89ed;
 }
 
 
 body {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', 'MV Boli', 'Comic Sans MS', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   padding: 2em;
@@ -61,6 +61,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+
 }
 
 a {
@@ -81,8 +82,14 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  color: var(--secondary-color);
+  font-size: x-large;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: larger;
+  margin-bottom: 5px;
 }
 
 button {

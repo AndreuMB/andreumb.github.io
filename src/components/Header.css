@@ -2,7 +2,7 @@ header {
   color: var(--primary-color);
 }
 
-nav button {
+nav > button {
   border-radius: 0;
   width: 100%;
   text-align: left;
@@ -27,4 +27,27 @@ button .description {
 button:hover .description {
   max-height: 100px; /* You can adjust based on expected content size */
   opacity: 1;
+}
+
+#content {
+  scrollbar-color: var(--secondary-color) transparent;
+  scrollbar-width: thin;
+  height: 100%;
+}
+
+.list  span {
+  color: var(--secondary-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.skills-list li {
+  cursor: pointer;
+  box-shadow: 5px 5px var(--primary-color);
+}
+
+.skills-list li:hover {
+  box-shadow: 0px 0px var(--primary-color);
 }

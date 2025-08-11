@@ -1,20 +1,39 @@
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useRef, useState, type ReactElement } from 'react';
 import './Header.css';
 import { FaChevronRight } from 'react-icons/fa';
 import Draggable from 'react-draggable';
+import AboutMe from './AboutMe';
+import Contact from './Contact';
+import Projects from './Projects';
 
 interface NavEntry {
   title: string;
   description: string;
   hide: boolean;
+  content: ReactElement;
 }
 
 function Header() {
   const [navEntries, setNavEntries] = useState<NavEntry[]>([
-    { title: 'About me', description: 'Some of my personal info', hide: true },
-    { title: 'Projects', description: 'Some of my work', hide: true },
-    { title: 'Fun', description: 'UwU', hide: true },
-    { title: 'Contact', description: 'Give me some money', hide: true },
+    {
+      title: 'About me',
+      description: 'Some of my personal info',
+      hide: true,
+      content: AboutMe(),
+    },
+    {
+      title: 'Projects',
+      description: 'Some of my work',
+      hide: true,
+      content: Projects(),
+    },
+    { title: 'Fun', description: 'UwU', hide: true, content: AboutMe() },
+    {
+      title: 'Contact',
+      description: 'Give me some money',
+      hide: true,
+      content: Contact(),
+    },
   ]);
   // const [showEntryWindows, setShowEntryWindows] = useState('');
   const handleEntryWindows = (entry: NavEntry) => {
@@ -33,11 +52,10 @@ function Header() {
       <h1 className="text-secondary mb-6">PORTFOLIO</h1>
       <nav className="w-80">
         {navEntries.map((entry) => (
-          <>
+          <Fragment key={entry.title}>
             <button
               type="button"
               className="border-none!"
-              key={entry.title}
               onClick={() => handleEntryWindows(entry)}
             >
               <div>
@@ -57,25 +75,26 @@ function Header() {
               >
                 <div
                   ref={nodeRef}
-                  className="absolute w-180 h-120 bg-primary-light border-secondary border"
+                  className="absolute w-180 h-120 bg-primary-light border-secondary border flex flex-col"
                 >
-                  <div className="handle flex justify-between px-1 border-secondary border-b bg-primary-light">
+                  <div className="handle flex justify-between px-1 border-secondary border-b bg-secondary">
                     <p>{entry.title.toUpperCase()}</p>
                     <button
                       type="button"
-                      className="simple-button"
+                      className="simple-button bg-transparent!"
                       onClick={() => handleEntryWindows(entry)}
                     >
                       [x]
                     </button>
                   </div>
-                  <div className="p-2">
-                    This readme is really dragging on...
+                  <div id="content" className="overflow-auto overflow-x-clip">
+                    {entry.content}
+                    {/* <Projects></Projects> */}
                   </div>
                 </div>
               </Draggable>
             )}
-          </>
+          </Fragment>
         ))}
       </nav>
     </header>
