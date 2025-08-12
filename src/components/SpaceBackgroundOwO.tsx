@@ -2,7 +2,7 @@ import { createElement, useEffect, useState, type ReactNode } from 'react';
 import './SpaceBackgroundOwO.css';
 
 function SpaceBackgroundOwO() {
-  const [stars, setStars] = useState<ReactNode>([]);
+  const [stars, setStars] = useState<ReactNode[]>([]);
   const starNumber = 20;
   useEffect(() => {
     const bg = document.getElementById('background');
@@ -30,7 +30,7 @@ function SpaceBackgroundOwO() {
   }, []);
 
   return (
-    <div id="background" className="w-dvw h-dvh absolute top-0 left-0 -z-10">
+    <div id="background">
       <div>{stars}</div>
     </div>
   );

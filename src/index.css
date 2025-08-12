@@ -1,5 +1,6 @@
 @import "tailwindcss";
-@theme  inline {
+
+@theme inline {
   --color-primary: var(--primary-color);
   --color-primary-light: var(--primary-light-color);
   --color-secondary: var(--secondary-color);
@@ -7,6 +8,7 @@
   --color-terciary: var(--terciary-color);
   --color-terciary-light: var(--terciary-light-color);
 }
+
 /* @custom-variant dark (&:where(.dark, .dark *)); */
 
 .light {
@@ -16,11 +18,11 @@
   --button-bg: #000000; */
 
   --primary-color: #9ADDFF;
-  --primary-light-color: #77b6eae3;
+  --primary-light-color: #4288d8c5;
   --secondary-color: #2E2E3A;
   --secondary-light-color: #e8eef2;
-  --terciary-color: #3db1ec;
-  --terciary-light-color: #c7d3dd;
+  --terciary-color: #c1be29;
+  --terciary-light-color: #ffff00;
 }
 
 .dark {
@@ -103,9 +105,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: var(--secondary-light-color);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

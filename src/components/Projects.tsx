@@ -1,4 +1,10 @@
+import useSound from 'use-sound';
 import Project from './Project';
+import key1 from '/src/assets/sounds/key1.mp3';
+import key2 from '/src/assets/sounds/key2.mp3';
+import key3 from '/src/assets/sounds/key3.mp3';
+import key4 from '/src/assets/sounds/key4.mp3';
+import key5 from '/src/assets/sounds/key5.mp3';
 
 function Projects() {
   const toolsList = [
@@ -18,11 +24,11 @@ function Projects() {
     'TypeScript',
     'Vue.js',
     'MySql',
+    'React',
     'Next.js',
     'NestJS',
     'Ionic',
-    'HTML',
-    'CSS',
+    'Tailwind',
     'C#',
     'PHP',
     'GDScript',
@@ -30,6 +36,19 @@ function Projects() {
     'XRTools',
     'Vuforia',
   ];
+
+  const [playKey1] = useSound(key1)
+  const [playKey2] = useSound(key2)
+  const [playKey3] = useSound(key3)
+  const [playKey4] = useSound(key4)
+  const [playKey5] = useSound(key5)
+
+  const keysSound = [playKey1, playKey2, playKey3, playKey4, playKey5]
+
+  const playRandomKey = () => {
+    keysSound[Math.floor(Math.random() * keysSound.length)]()
+  }
+
   return (
     <div className="p-5 flex flex-col gap-6">
       <div className="flex gap-6 skills-list">
@@ -39,6 +58,7 @@ function Projects() {
             {toolsList.map((tool) => (
               <li
                 key={tool}
+                onMouseEnter={playRandomKey}
                 className="px-1 bg-secondary rounded-md transition-all duration-100 hover:translate-x-[3px] hover:translate-y-[3px]"
               >
                 {tool}
@@ -53,6 +73,7 @@ function Projects() {
             {skillsList.map((skill) => (
               <li
                 key={skill}
+                onMouseEnter={playRandomKey}
                 className="px-1 bg-secondary rounded-md transition-all duration-100 hover:translate-x-[3px] hover:translate-y-[3px]"
               >
                 {skill}
@@ -64,7 +85,7 @@ function Projects() {
 
       <div>
         <h2>WEBAPPS</h2>
-        <p className="text-sm mb-2"> Click the images to visit their site.</p>
+        <p className="mb-2"> Click the images to visit their site!</p>
         <div className="flex flex-col gap-4">
           <Project
             name="MYVIDEOGAMELIST"
@@ -108,7 +129,7 @@ function Projects() {
 
       <div>
         <h2>GAMES</h2>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 mb-2">
           <Project
             name="SQUASH THE CREEPS 2"
             img="src/assets/STC2-logo.png"
@@ -160,6 +181,19 @@ function Projects() {
             </p>
           </Project>
         </div>
+        <p> You can check all the projects on my <a
+          target="_blank"
+          href="https://github.com/AndreuMB/"
+        >
+          {' '}
+          GitHub
+        </a> and the released games on my <a
+          target="_blank"
+          href="https://andreum.itch.io/"
+        >
+            {' '}
+            itch.io
+          </a>.</p>
       </div>
     </div>
   );

@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import SkyBackgroundUwU from './SkyBackgroundUwU';
 import SpaceBackgroundOwO from './SpaceBackgroundOwO';
+import lightswitch from '/src/assets/sounds/switch1.mp3';
+import lightswitch2 from '/src/assets/sounds/switch2.mp3';
+import useSound from 'use-sound'
 
 import './DarkModeToggle.css';
 
@@ -29,17 +32,22 @@ function DarkModeToggle() {
     }
   }, []);
 
+  const [playLight] = useSound(lightswitch)
+  const [playDark] = useSound(lightswitch2)
+
   const handleButton = () => {
     // save darkMode
     localStorage.setItem(storageKey, String(!darkMode));
-
+    darkMode ? playLight() : playDark()
     // change boolean
     setDarkMode(!darkMode);
   };
 
   return (
-    <>
-      {darkMode ? <SpaceBackgroundOwO /> : <SkyBackgroundUwU />}
+    <div>
+      <div className='w-dvw h-dvh absolute top-0 left-0 -z-10'>
+        {darkMode ? <SpaceBackgroundOwO /> : <SkyBackgroundUwU />}
+      </div>
 
       <button
         type="button"
@@ -81,7 +89,8 @@ function DarkModeToggle() {
           </g>
         </svg>
       </button>
-    </>
+    </div>
+
   );
 }
 

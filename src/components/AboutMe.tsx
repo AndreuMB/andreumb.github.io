@@ -9,7 +9,7 @@ function AboutMe() {
         />
         <div>
           <h1 className="text-4xl">Andreu Micó</h1>
-          <div className="text-sm text-terciary">
+          <div className="text-sm text-terciary hover:text-terciary-light">
             <p>Junior web developer</p>
             <p>Wannabe game developer</p>
           </div>
@@ -20,7 +20,7 @@ function AboutMe() {
           <div className="pb-3">
             Hey! I'm Andreu, a web developer and a game developer in process!
           </div>
-          <ul className="mt-2 pl-6 list-disc space-y-2 list">
+          <ul className="mt-2 pl-6 list-disc space-y-2 list *:bg-primary-light">
             <li>
               This days I am focused on <span>frontend development</span>
               (HTML, CSS, TypeScript, React, Tailwind, etc.).
@@ -60,13 +60,13 @@ function AboutMe() {
             (GRADUATED IES SIMARRO 2022)
           </span>
         </div>
-        <span className="font-mono font-semibold text-xl">OTHER INTERESTS</span>
+        <h3 className="font-mono font-semibold text-xl">OTHER INTERESTS <span className="text-terciary hover:text-terciary-light">{"UwU"}</span></h3>
         <ul className="my-2 pl-6 list-disc">
-          <li>game development</li>
-          <li>passionate guitar player</li>
-          <li>drawing characters</li>
-          <li>volleyball</li>
-          <li>warframe addict</li>
+          <li>Game development</li>
+          <li>Passionate guitar player</li>
+          <li>Drawing characters</li>
+          <li>Volleyball</li>
+          <li>Warframe addict</li>
         </ul>
         <span className="font-mono font-semibold text-xl">
           LANGUAGE PROFICIENCY
