@@ -5,6 +5,9 @@ import Draggable from 'react-draggable';
 import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Projects from './Projects';
+import Fun from './Fun';
+import mouseClick from '/src/assets/sounds/mouse_click.mp3';
+import useSound from 'use-sound';
 
 interface NavEntry {
   ref: RefObject<null>;
@@ -38,7 +41,7 @@ function Header() {
       title: 'Fun',
       description: 'UwU',
       hide: true,
-      content: AboutMe,
+      content: Fun,
       focus: false
     },
     {
@@ -51,11 +54,13 @@ function Header() {
     },
   ]);
   // const [showEntryWindows, setShowEntryWindows] = useState('');
+  const [playClick] = useSound(mouseClick)
   const handleEntryWindows = (entry: NavEntry) => {
     const updatedEntries = navEntries.map((centry) => {
       if (centry.title === entry.title) centry.hide = !centry.hide;
       return centry;
     });
+    playClick()
     setNavEntries(updatedEntries);
   };
 

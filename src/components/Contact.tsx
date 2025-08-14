@@ -9,7 +9,7 @@ function Contact() {
         href="mailto:andreuolleria@gmail.com"
         rel="email"
       >
-        <button>Email me!</button>
+        <button className="bg-secondary! hover:bg-terciary!">Email me!</button>
       </a>
     </div>
   );
