@@ -63,7 +63,7 @@ function Header() {
       ref: useRef(null),
       title: 'Portrait',
       description: '',
-      hide: false,
+      hide: true,
       content: Portrait,
       focus: false,
       menuEntry: false,

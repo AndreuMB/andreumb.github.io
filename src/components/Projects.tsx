@@ -5,6 +5,10 @@ import key2 from '/src/assets/sounds/key2.mp3';
 import key3 from '/src/assets/sounds/key3.mp3';
 import key4 from '/src/assets/sounds/key4.mp3';
 import key5 from '/src/assets/sounds/key5.mp3';
+import myvideogamelistImg from '/src/assets/MVL_banner.png'
+import pianetImg from '/src/assets/pianet_icon2.png'
+import STC2Img from '/src/assets/STC2-logo.png'
+import egonismImg from '/src/assets/Egonism1.png'
 
 function Projects() {
   const toolsList = [
@@ -89,7 +93,7 @@ function Projects() {
         <div className="flex flex-col gap-4">
           <Project
             name="MYVIDEOGAMELIST"
-            img="/src/assets/MVL_banner.png"
+            img={myvideogamelistImg}
             img_link="https://my-videogamelist.netlify.app/"
           >
             <p>
@@ -107,7 +111,7 @@ function Projects() {
           </Project>
           <Project
             name="PIANET"
-            img="/src/assets/pianet_icon2.png"
+            img={pianetImg}
             img_link="https://pianet.netlify.app/"
           >
             <p>
@@ -132,7 +136,7 @@ function Projects() {
         <div className="flex flex-col gap-4 mb-2">
           <Project
             name="SQUASH THE CREEPS 2"
-            img="src/assets/STC2-logo.png"
+            img={STC2Img}
             img_link="https://andreum.itch.io/squash-the-creeps-2"
           >
             <p>
@@ -160,7 +164,7 @@ function Projects() {
 
           <Project
             name="EGONISM"
-            img="src/assets/Egonism1.png"
+            img={egonismImg}
             img_link="https://andreum.itch.io/egonism"
           >
             <p>

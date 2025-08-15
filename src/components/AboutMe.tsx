@@ -1,5 +1,4 @@
-import { useRef } from "react";
-import Draggable from "react-draggable";
+import portrait from '/src/assets/portrait.jpg'
 
 interface AboutMeProps {
   onShowPortrait?: () => void;
@@ -11,7 +10,7 @@ function AboutMe({ onShowPortrait }: AboutMeProps) {
       <header className="flex items-center border-b-2 w-auto h-44 p-6 gap-10 text-lg">
         <div onClick={onShowPortrait} className="relative h-full w-31 rounded-full overflow-hidden border border-secondary hover:scale-110 cursor-pointer">
           <img
-            src="/src/assets/portrait.jpg"
+            src={portrait}
             alt="profile-picture"
             className="h-full w-full object-cover"
           />
