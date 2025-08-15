@@ -78,6 +78,7 @@ function Header() {
       return centry;
     });
     playClick()
+    handleWindowZindex(entry)
     setNavEntries(updatedEntries);
   };
 

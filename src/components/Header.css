@@ -2,11 +2,11 @@ header {
   color: var(--primary-color);
 }
 
-nav > button {
+nav>button {
   border-radius: 0;
   width: 100%;
   text-align: left;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +25,8 @@ button .description {
 }
 
 button:hover .description {
-  max-height: 100px; /* You can adjust based on expected content size */
+  max-height: 100px;
+  /* You can adjust based on expected content size */
   opacity: 1;
 }
 
@@ -35,7 +36,7 @@ button:hover .description {
   height: 100%;
 }
 
-.list  span {
+.list span {
   color: var(--secondary-color);
 }
 
@@ -44,7 +45,8 @@ button:hover .description {
 }
 
 .skills-list li {
-  cursor: pointer;
+  cursor: default;
+  user-select: none;
   box-shadow: 5px 5px var(--primary-color);
 }
 
