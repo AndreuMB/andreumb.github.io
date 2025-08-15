@@ -11,13 +11,7 @@
   --color-terciary-light: var(--terciary-light-color);
 }
 
-/* @custom-variant dark (&:where(.dark, .dark *)); */
-
 .light {
-  /* --text-color: #213547;
-  --bg-color: #ffffff;
-  --button-text: green;
-  --button-bg: #000000; */
 
   --primary-color: #9ADDFF;
   --primary-light-color: #4288d8c5;
@@ -33,11 +27,9 @@
 .dark {
 
   --primary-color: #160d27;
-  /* --primary-light-color: #ecda62; */
   --primary-light-color: #9f84cad0;
   --primary-shadow-color: #6c66c86b;
 
-  /* --secondary-color: #4d227e; */
   --secondary-color: #ECDD7B;
   --secondary-light-color: #b9b9b9;
   --secondary-shadow-color: #ecdd7b43;

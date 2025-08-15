@@ -5,7 +5,8 @@ function Contact() {
     <div className="p-5 items-center gap-5 flex flex-col h-full justify-center text-center">
       <h1>Connect with me!</h1>
       <div className="marquee text-9xl bg-secondary">
-        <p className='m-auto'>
+        <p className='bg-secondary'>
+          SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO!
           SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO!
         </p>
       </div>
