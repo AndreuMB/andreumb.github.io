@@ -1,9 +1,22 @@
+import './Contact.css';
+
 function Contact() {
   return (
-    <div className="p-5 items-center gap-5 flex flex-col h-full justify-center">
+    <div className="p-5 items-center gap-5 flex flex-col h-full justify-center text-center">
       <h1>Connect with me!</h1>
-      <img className="h-50" src="/src/assets/profile.png" alt="email_image" />
-      <p>You can send me an email at andreuolleria@gmail.com</p>
+      <div className="marquee text-9xl bg-secondary">
+        <p className='m-auto'>
+          SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO!
+        </p>
+      </div>
+      <div className='space-y-2'>
+        <p>I have a few years of working experience developing web apps and I'm still having a lot of fun programming. I'm
+          excited to keep learning and building new things!
+        </p>
+        <p>Don't be shy—feel free to reach out, I'd be glad to answer.</p>
+        <p>You can send me an email at <span className='text-secondary'>andreuolleria@gmail.com</span>.</p>
+      </div>
+
       <a
         className="text-primary!"
         href="mailto:andreuolleria@gmail.com"

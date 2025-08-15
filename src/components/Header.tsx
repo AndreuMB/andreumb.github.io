@@ -8,14 +8,17 @@ import Projects from './Projects';
 import Fun from './Fun';
 import mouseClick from '/src/assets/sounds/mouse_click.mp3';
 import useSound from 'use-sound';
+import Portrait from './Portrait';
 
 interface NavEntry {
   ref: RefObject<null>;
   title: string;
   description: string;
   hide: boolean;
-  content: ComponentType;
-  focus: boolean
+  content: ComponentType<{ onShowPortrait?: () => void }>;
+  focus: boolean;
+  menuEntry: boolean
+  size?: { width: number, height: number }
 }
 
 function Header() {
@@ -26,7 +29,8 @@ function Header() {
       description: 'An honest presentation :)',
       hide: true,
       content: AboutMe,
-      focus: false
+      focus: false,
+      menuEntry: true
     },
     {
       ref: useRef(null),
@@ -34,7 +38,8 @@ function Header() {
       description: 'Some of my work',
       hide: true,
       content: Projects,
-      focus: false
+      focus: false,
+      menuEntry: true
     },
     {
       ref: useRef(null),
@@ -42,7 +47,8 @@ function Header() {
       description: 'UwU',
       hide: true,
       content: Fun,
-      focus: false
+      focus: false,
+      menuEntry: true
     },
     {
       ref: useRef(null),
@@ -50,7 +56,18 @@ function Header() {
       description: 'Talk with me!',
       hide: true,
       content: Contact,
-      focus: false
+      focus: false,
+      menuEntry: true
+    },
+    {
+      ref: useRef(null),
+      title: 'Portrait',
+      description: '',
+      hide: false,
+      content: Portrait,
+      focus: false,
+      menuEntry: false,
+      size: { width: 80, height: 120 }
     },
   ]);
   // const [showEntryWindows, setShowEntryWindows] = useState('');
@@ -63,6 +80,12 @@ function Header() {
     playClick()
     setNavEntries(updatedEntries);
   };
+
+  const showPortrait = () => {
+    const entry = navEntries.find(e => e.title === 'Portrait') || navEntries[0]
+    handleEntryWindows(entry)
+    handleWindowZindex(entry)
+  }
 
   const handleWindowZindex = (entry: NavEntry) => {
     const updatedEntries = navEntries.map((centry) => {
@@ -79,17 +102,19 @@ function Header() {
       <nav className="w-80">
         {navEntries.map((entry) => (
           <Fragment key={entry.title}>
-            <button
-              type="button"
-              className="border-none!"
-              onClick={() => handleEntryWindows(entry)}
-            >
-              <div>
-                <p>{entry.title.toUpperCase()}</p>
-                <p className="description">{entry.description}</p>
-              </div>
-              <FaChevronRight />
-            </button>
+            {entry.menuEntry === true && (
+              <button
+                type="button"
+                className="border-none!"
+                onClick={() => handleEntryWindows(entry)}
+              >
+                <div>
+                  <p>{entry.title.toUpperCase()}</p>
+                  <p className="description">{entry.description}</p>
+                </div>
+                <FaChevronRight />
+              </button>
+            )}
             {entry.hide === false && (
               <Draggable
                 onMouseDown={() => handleWindowZindex(entry)}
@@ -102,7 +127,7 @@ function Header() {
               >
                 <div
                   ref={entry.ref}
-                  className={`absolute w-180 h-120 bg-primary-light border-secondary border flex flex-col ${entry.focus ? 'z-50' : 'z-0'}`}
+                  className={`absolute ${entry.size ? 'w-' + entry.size.width + ' h-' + entry.size.height : 'w-180 h-120'} bg-primary-light border-secondary border flex flex-col ${entry.focus ? 'z-50' : 'z-0'}`}
                 >
                   <div className="handle flex justify-between px-1 border-secondary border-b bg-secondary">
                     <p>{entry.title.toUpperCase()}</p>
@@ -115,14 +140,15 @@ function Header() {
                     </button>
                   </div>
                   <div id="content" className="overflow-auto overflow-x-clip">
-                    <entry.content></entry.content>
+                    <entry.content onShowPortrait={showPortrait}></entry.content>
                   </div>
                 </div>
               </Draggable>
             )}
           </Fragment>
         )
-        )}
+        )
+        }
       </nav>
     </header>
   );

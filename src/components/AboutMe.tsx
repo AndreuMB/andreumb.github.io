@@ -1,12 +1,24 @@
-function AboutMe() {
+import { useRef } from "react";
+import Draggable from "react-draggable";
+
+interface AboutMeProps {
+  onShowPortrait?: () => void;
+}
+
+function AboutMe({ onShowPortrait }: AboutMeProps) {
   return (
     <>
       <header className="flex items-center border-b-2 w-auto h-44 p-6 gap-10 text-lg">
-        <img
-          src="/src/assets/profile.png"
-          alt="profile-picture"
-          className="h-full rounded-full"
-        />
+        <div onClick={onShowPortrait} className="relative h-full w-31 rounded-full overflow-hidden border border-secondary hover:scale-110 cursor-pointer">
+          <img
+            src="/src/assets/portrait.jpg"
+            alt="profile-picture"
+            className="h-full w-full object-cover"
+          />
+          <div
+            className="h-full w-full bg-secondary-shadow absolute left-0 top-0 pointer-events-none"
+          />
+        </div>
         <div>
           <h1 className="text-4xl">Andreu Micó</h1>
           <div className="text-sm text-terciary hover:text-terciary-light">
@@ -60,7 +72,7 @@ function AboutMe() {
             (GRADUATED IES SIMARRO 2022)
           </span>
         </div>
-        <h3 className="font-mono font-semibold text-xl">OTHER INTERESTS <span className="text-terciary hover:text-terciary-light">{"UwU"}</span></h3>
+        <h3 className="font-mono font-semibold text-xl">OTHER INTERESTS <span className="text-terciary hover:text-terciary-light">YAY!</span></h3>
         <ul className="my-2 pl-6 list-disc">
           <li>Game development</li>
           <li>Passionate guitar player</li>
