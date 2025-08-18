@@ -51,7 +51,7 @@ function DarkModeToggle() {
 
       <button
         type="button"
-        className="theme-toggle absolute top-4 right-4 p-2!"
+        className="theme-toggle absolute top-3 right-3 p-2!"
         id="theme-toggle"
         title="Toggles light & dark"
         aria-label="auto"

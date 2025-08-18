@@ -70,9 +70,18 @@ function Header() {
       size: { width: 80, height: 120 }
     },
   ]);
-  // const [showEntryWindows, setShowEntryWindows] = useState('');
+
+  const windowSize = {
+    width: 720,
+    height: 480
+  }
+
+  const widthBreak = 768
+
   const [playClick] = useSound(mouseClick)
   const handleEntryWindows = (entry: NavEntry) => {
+    console.log('enter');
+
     const updatedEntries = navEntries.map((centry) => {
       if (centry.title === entry.title) centry.hide = !centry.hide;
       return centry;
@@ -98,7 +107,7 @@ function Header() {
   }
 
   return (
-    <header>
+    <header className='mt-12'>
       <h1 className="text-secondary mb-6">PORTFOLIO</h1>
       <nav className="w-80">
         {navEntries.map((entry) => (
@@ -121,14 +130,18 @@ function Header() {
                 onMouseDown={() => handleWindowZindex(entry)}
                 handle=".handle"
                 defaultPosition={{
-                  x: Math.floor(Math.random() * 400) + 400,
-                  y: -300,
+                  x: window.innerWidth < widthBreak ? 0 : Math.floor(Math.random() * ((window.innerWidth - windowSize.width - 60) - 400) + 400),
+                  y: window.innerWidth < widthBreak ? 400 : -300,
                 }}
                 nodeRef={entry.ref}
               >
                 <div
                   ref={entry.ref}
-                  className={`absolute ${entry.size ? 'w-' + entry.size.width + ' h-' + entry.size.height : 'w-180 h-120'} bg-primary-light border-secondary border flex flex-col ${entry.focus ? 'z-50' : 'z-0'}`}
+                  className={`absolute ${entry.size ? 'w-' + entry.size.width + ' h-' + entry.size.height : 'h-' + windowSize.height} not-md:w-80 not-md:h-120 bg-primary-light border-secondary border flex flex-col ${entry.focus ? 'z-50' : 'z-0'}`}
+                  style={{
+                    width: window.innerWidth < widthBreak ? window.innerWidth - 80 : windowSize.width,
+                    height: windowSize.height
+                  }}
                 >
                   <div className="handle flex justify-between px-1 border-secondary border-b bg-secondary select-none">
                     <p>{entry.title.toUpperCase()}</p>
@@ -136,6 +149,7 @@ function Header() {
                       type="button"
                       className="simple-button bg-transparent!"
                       onClick={() => handleEntryWindows(entry)}
+                      onTouchStart={() => handleEntryWindows(entry)}
                     >
                       [x]
                     </button>

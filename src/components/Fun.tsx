@@ -119,7 +119,7 @@ function Fun() {
     }
 
     return (
-        <div className="p-5 gap-5 flex flex-col h-full justify-center text-center">
+        <div className="p-5 gap-5 flex flex-col justify-center text-center">
             <div className="flex items-center justify-center gap-2 text-secondary">
                 <FaKeyboard />
                 <h1>Typing Game</h1>
@@ -136,7 +136,7 @@ function Fun() {
 
             <div className="container gap-3 flex flex-col bg-primary-light p-2 rounded">
                 <div className="break-words text-secondary">{sentenceDone}{sentenceLeft}</div>
-                <textarea onFocus={start} onBlur={stop} rows={4} ref={textareaRef} className="quote-input bg-secondary w-full" onKeyDown={(e) => checkTyping(e)} ></textarea>
+                <textarea spellCheck={false} onFocus={start} onBlur={stop} rows={4} ref={textareaRef} className="quote-input bg-secondary w-full" onKeyDown={(e) => checkTyping(e)} ></textarea>
             </div>
             <div>Hope you have fun!</div>
         </div>

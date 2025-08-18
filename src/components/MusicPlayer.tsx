@@ -33,7 +33,7 @@ function MusicPlayer() {
             </button>
             <div className="text-secondary flex flex-row gap-6 items-center">
                 <FaVolumeDown />
-                <Slider className="**:bg-secondary! w-26!" value={volumeShow} onChange={handleChange} />
+                <Slider className="**:bg-secondary! w-26! p-0!" value={volumeShow} onChange={handleChange} />
                 <FaVolumeUp />
             </div>
         </div>
