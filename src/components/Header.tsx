@@ -137,10 +137,10 @@ function Header() {
               >
                 <div
                   ref={entry.ref}
-                  className={`absolute ${entry.size ? 'w-' + entry.size.width + ' h-' + entry.size.height : 'h-' + windowSize.height} not-md:w-80 not-md:h-120 bg-primary-light border-secondary border flex flex-col ${entry.focus ? 'z-50' : 'z-0'}`}
+                  className={`absolute not-md:w-80 not-md:h-120 bg-primary-light border-secondary border flex flex-col ${entry.focus ? 'z-50' : 'z-0'}`}
                   style={{
-                    width: window.innerWidth < widthBreak ? window.innerWidth - 80 : windowSize.width,
-                    height: windowSize.height
+                    width: !entry.size ? window.innerWidth < widthBreak ? window.innerWidth - 80 : windowSize.width : 320,
+                    height: !entry.size ? windowSize.height : 480
                   }}
                 >
                   <div className="handle flex justify-between px-1 border-secondary border-b bg-secondary select-none">
