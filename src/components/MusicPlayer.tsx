@@ -4,7 +4,6 @@ import bgMusic from '/src/assets/sounds/bg_music.mp3';
 import useSound from "use-sound";
 import { useState } from "react";
 import Slider from "@mui/material/Slider";
-import Stack from "@mui/material/Stack";
 
 function MusicPlayer() {
     const [playClick] = useSound(mouseClick)
