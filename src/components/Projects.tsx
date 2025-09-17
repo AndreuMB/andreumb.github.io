@@ -9,6 +9,7 @@ import myvideogamelistImg from '/src/assets/MVL_banner.png'
 import pianetImg from '/src/assets/pianet_icon2.png'
 import STC2Img from '/src/assets/STC2-logo.png'
 import egonismImg from '/src/assets/Egonism1.png'
+import pianoImg from '/src/assets/piano.png'
 
 function Projects() {
   const toolsList = [
@@ -91,6 +92,24 @@ function Projects() {
         <h2>WEBAPPS</h2>
         <p className="mb-2"> Click the images to visit their site!</p>
         <div className="flex flex-col gap-4">
+          <Project
+            name="CHORD PROGRESSION MAKER"
+            img={pianoImg}
+            img_link="https://chordprogressionmanker.netlify.app/"
+          >
+            <p>
+              Generates random chord progressions based on the scale you select, 
+              useful if you want to write songs! Check it on github
+              <a
+                target="_blank"
+                href="https://github.com/AndreuMB/chord-progression-maker"
+              >
+                {' '}
+                here
+              </a>
+              .
+            </p>
+          </Project>
           <Project
             name="MYVIDEOGAMELIST"
             img={myvideogamelistImg}
