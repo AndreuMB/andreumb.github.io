@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import DarkModeToggle from './components/DarkModeToggle';
+import DarkModeToggle from './components/TopRightPanel';
 import Welcome from './components/Welcome';
 import MusicPlayer from './components/MusicPlayer';
 

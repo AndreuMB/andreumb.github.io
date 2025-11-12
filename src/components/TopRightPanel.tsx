@@ -5,9 +5,10 @@ import lightswitch from '/src/assets/sounds/switch1.mp3';
 import lightswitch2 from '/src/assets/sounds/switch2.mp3';
 import useSound from 'use-sound'
 
-import './DarkModeToggle.css';
+import './TopRightPanel.css';
+import LanguageToggleButton from './LanguageToggleButton';
 
-function DarkModeToggle() {
+function TopRightPanel() {
   const [darkMode, setDarkMode] = useState(true);
 
   const storageKey = 'dark-mode';
@@ -49,9 +50,14 @@ function DarkModeToggle() {
         {darkMode ? <SpaceBackgroundOwO /> : <SkyBackgroundUwU />}
       </div>
 
+    <div className=' absolute top-3 right-3 p-2 flex gap-2'>
+      {/* toggle language */}
+      <LanguageToggleButton darkMode={darkMode} />
+
+      {/* toggle dark mode */}
       <button
         type="button"
-        className="theme-toggle absolute top-3 right-3 p-2!"
+        className="theme-toggle"
         id="theme-toggle"
         title="Toggles light & dark"
         aria-label="auto"
@@ -89,9 +95,11 @@ function DarkModeToggle() {
           </g>
         </svg>
       </button>
+
+      </div>
     </div>
 
   );
 }
 
-export default DarkModeToggle;
+export default TopRightPanel;
