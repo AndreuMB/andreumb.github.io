@@ -1,117 +1,128 @@
-import { Fragment, useRef, useState, type ComponentType, type RefObject } from 'react';
-import './Header.css';
-import { FaChevronRight } from 'react-icons/fa';
-import Draggable from 'react-draggable';
-import AboutMe from './AboutMe';
-import Contact from './Contact';
-import Projects from './Projects';
-import Fun from './Fun';
-import mouseClick from '/src/assets/sounds/mouse_click.mp3';
-import useSound from 'use-sound';
-import Portrait from './Portrait';
+import {
+  Fragment,
+  useRef,
+  useState,
+  type ComponentType,
+  type RefObject,
+} from "react";
+import "./Header.css";
+import { FaChevronRight } from "react-icons/fa";
+import Draggable from "react-draggable";
+import AboutMe from "./AboutMe";
+import Contact from "./Contact";
+import Projects from "./Projects";
+import Fun from "./Fun";
+import mouseClick from "/src/assets/sounds/mouse_click.mp3";
+import useSound from "use-sound";
+import Portrait from "./Portrait";
+import { msg } from "@lingui/core/macro";
+import { Trans } from "@lingui/react/macro";
+import { Trans as TransD } from "@lingui/react";
+import type { MessageDescriptor } from "@lingui/core";
 
 interface NavEntry {
   ref: RefObject<null>;
-  title: string;
-  description: string;
+  title: MessageDescriptor;
+  description: MessageDescriptor;
   hide: boolean;
   content: ComponentType<{ onShowPortrait?: () => void }>;
   focus: boolean;
-  menuEntry: boolean
-  size?: { width: number, height: number }
+  menuEntry: boolean;
+  size?: { width: number; height: number };
 }
 
 function Header() {
   const [navEntries, setNavEntries] = useState<NavEntry[]>([
     {
       ref: useRef(null),
-      title: 'About me',
-      description: 'An honest presentation :)',
+      title: msg`About me`,
+      description: msg`An honest presentation :)`,
       hide: true,
       content: AboutMe,
       focus: false,
-      menuEntry: true
+      menuEntry: true,
     },
     {
       ref: useRef(null),
-      title: 'Projects',
-      description: 'Some of my work',
+      title: msg`Projects`,
+      description: msg`Some of my work`,
       hide: true,
       content: Projects,
       focus: false,
-      menuEntry: true
+      menuEntry: true,
     },
     {
       ref: useRef(null),
-      title: 'Fun',
-      description: 'UwU',
+      title: msg`Fun`,
+      description: msg`UwU`,
       hide: true,
       content: Fun,
       focus: false,
-      menuEntry: true
+      menuEntry: true,
     },
     {
       ref: useRef(null),
-      title: 'Contact',
-      description: 'Talk with me!',
+      title: msg`Contact`,
+      description: msg`Talk with me!`,
       hide: true,
       content: Contact,
       focus: false,
-      menuEntry: true
+      menuEntry: true,
     },
     {
       ref: useRef(null),
-      title: 'Portrait',
-      description: '',
+      title: msg`Portrait`,
+      description: msg``,
       hide: true,
       content: Portrait,
       focus: false,
       menuEntry: false,
-      size: { width: 80, height: 120 }
+      size: { width: 80, height: 120 },
     },
   ]);
 
   const windowSize = {
     width: 720,
-    height: 480
-  }
+    height: 480,
+  };
 
-  const widthBreak = 768
+  const widthBreak = 768;
 
-  const [playClick] = useSound(mouseClick)
+  const [playClick] = useSound(mouseClick);
   const handleEntryWindows = (entry: NavEntry) => {
-    console.log('enter');
-
     const updatedEntries = navEntries.map((centry) => {
       if (centry.title === entry.title) centry.hide = !centry.hide;
       return centry;
     });
-    playClick()
-    handleWindowZindex(entry)
+    playClick();
+    handleWindowZindex(entry);
     setNavEntries(updatedEntries);
   };
 
   const showPortrait = () => {
-    const entry = navEntries.find(e => e.title === 'Portrait') || navEntries[0]
-    handleEntryWindows(entry)
-    handleWindowZindex(entry)
-  }
+    const entry =
+      navEntries.find((e) => e.title.message === "Portrait") || navEntries[0];
+    handleEntryWindows(entry);
+    handleWindowZindex(entry);
+  };
 
   const handleWindowZindex = (entry: NavEntry) => {
     const updatedEntries = navEntries.map((centry) => {
-      centry.focus = false
+      centry.focus = false;
       if (centry.title === entry.title) centry.focus = true;
       return centry;
     });
     setNavEntries(updatedEntries);
-  }
+  };
 
   return (
-    <header className='mt-12'>
-      <h1 className="text-secondary mb-6">PORTFOLIO</h1>
+    <header className="mt-12">
+      <h1 className="text-secondary mb-6">
+        <Trans>PORTFOLIO</Trans>
+      </h1>
       <nav className="w-80">
         {navEntries.map((entry) => (
-          <Fragment key={entry.title}>
+          <Fragment key={entry.title.message}>
             {entry.menuEntry === true && (
               <button
                 type="button"
@@ -119,8 +130,13 @@ function Header() {
                 onClick={() => handleEntryWindows(entry)}
               >
                 <div>
-                  <p>{entry.title.toUpperCase()}</p>
-                  <p className="description">{entry.description}</p>
+                  <p className="uppercase">
+                    <TransD id={entry.title.id} />
+                  </p>
+
+                  <p className="description">
+                    <TransD id={entry.description.id} />
+                  </p>
                 </div>
                 <FaChevronRight />
               </button>
@@ -130,21 +146,36 @@ function Header() {
                 onMouseDown={() => handleWindowZindex(entry)}
                 handle=".handle"
                 defaultPosition={{
-                  x: window.innerWidth < widthBreak ? 0 : Math.floor(Math.random() * ((window.innerWidth - windowSize.width - 60) - 400) + 400),
+                  x:
+                    window.innerWidth < widthBreak
+                      ? 0
+                      : Math.floor(
+                          Math.random() *
+                            (window.innerWidth - windowSize.width - 60 - 400) +
+                            400
+                        ),
                   y: window.innerWidth < widthBreak ? 400 : -300,
                 }}
                 nodeRef={entry.ref}
               >
                 <div
                   ref={entry.ref}
-                  className={`absolute not-md:w-80 not-md:h-120 bg-primary-light border-secondary border flex flex-col ${entry.focus ? 'z-50' : 'z-0'}`}
+                  className={`absolute not-md:w-80 not-md:h-120 bg-primary-light border-secondary border flex flex-col ${
+                    entry.focus ? "z-50" : "z-0"
+                  }`}
                   style={{
-                    width: !entry.size ? window.innerWidth < widthBreak ? window.innerWidth - 80 : windowSize.width : 320,
-                    height: !entry.size ? windowSize.height : 480
+                    width: !entry.size
+                      ? window.innerWidth < widthBreak
+                        ? window.innerWidth - 80
+                        : windowSize.width
+                      : 320,
+                    height: !entry.size ? windowSize.height : 480,
                   }}
                 >
-                  <div className="handle flex justify-between px-1 border-secondary border-b bg-secondary select-none">
-                    <p>{entry.title.toUpperCase()}</p>
+                  <div className="handle flex justify-between px-1 border-secondary border-b bg-secondary select-none uppercase">
+                    <p>
+                      <TransD id={entry.title.id} />
+                    </p>
                     <button
                       type="button"
                       className="simple-button bg-transparent!"
@@ -155,15 +186,15 @@ function Header() {
                     </button>
                   </div>
                   <div id="content" className="overflow-auto overflow-x-clip">
-                    <entry.content onShowPortrait={showPortrait}></entry.content>
+                    <entry.content
+                      onShowPortrait={showPortrait}
+                    ></entry.content>
                   </div>
                 </div>
               </Draggable>
             )}
           </Fragment>
-        )
-        )
-        }
+        ))}
       </nav>
     </header>
   );

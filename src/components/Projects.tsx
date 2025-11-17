@@ -10,6 +10,7 @@ import pianetImg from '/src/assets/pianet_icon2.png'
 import STC2Img from '/src/assets/STC2-logo.png'
 import egonismImg from '/src/assets/Egonism1.png'
 import pianoImg from '/src/assets/piano.png'
+import { Trans } from "@lingui/react/macro";
 
 function Projects() {
   const toolsList = [
@@ -58,7 +59,7 @@ function Projects() {
     <div className="p-5 flex flex-col gap-6">
       <div className="flex gap-6 skills-list">
         <div className="w-1/2">
-          <h2>TOOLS</h2>
+          <h2><Trans>TOOLS</Trans></h2>
           <ul className="list flex gap-2 flex-wrap">
             {toolsList.map((tool) => (
               <li
@@ -90,7 +91,7 @@ function Projects() {
 
       <div>
         <h2>WEBAPPS</h2>
-        <p className="mb-2"> Click the images to visit their site!</p>
+        <p className="mb-2"><Trans>Click the images to visit their site!</Trans></p>
         <div className="flex flex-col gap-4">
           <Project
             name="CHORD PROGRESSION MAKER"
@@ -98,14 +99,14 @@ function Projects() {
             img_link="https://chordprogressionmanker.netlify.app/"
           >
             <p>
-              Generates random chord progressions based on the scale you select, 
-              useful if you want to write songs! Check it on github
+              <Trans>Generates random chord progressions based on the scale you select, 
+              useful if you want to write songs! Check it on github</Trans>
               <a
                 target="_blank"
                 href="https://github.com/AndreuMB/chord-progression-maker"
               >
                 {' '}
-                here
+                <Trans>here</Trans>
               </a>
               .
             </p>
@@ -116,14 +117,14 @@ function Projects() {
             img_link="https://my-videogamelist.netlify.app/"
           >
             <p>
-              Organize, track, and share your video game journey. Fun project
-              made with Vue.js with a cute BeeStyle. Check it on github
+              <Trans>Organize, track, and share your video game journey. Fun project
+              made with Vue.js with a cute BeeStyle. Check it on github</Trans>
               <a
                 target="_blank"
                 href="https://github.com/AndreuMB/MyVideogameList"
               >
                 {' '}
-                here
+                <Trans>here</Trans>
               </a>
               .
             </p>
@@ -134,15 +135,15 @@ function Projects() {
             img_link="https://pianet.netlify.app/"
           >
             <p>
-              Create and share music sheets with the world. This was my final
-              degree project in 2022, and I was very proud of it.
+              <Trans>Create and share music sheets with the world. This was my final
+              degree project in 2022, and I was very proud of it.</Trans>
             </p>
             <p>
-              It's cool to see how much I've grown since then. Check it out on
-              GitHub
+              <Trans>It's cool to see how much I've grown since then. Check it out on
+              GitHub</Trans>
               <a target="_blank" href="https://github.com/AndreuMB/PianetVue">
                 {' '}
-                here
+                <Trans>here</Trans>
               </a>
               .
             </p>
@@ -159,23 +160,23 @@ function Projects() {
             img_link="https://andreum.itch.io/squash-the-creeps-2"
           >
             <p>
-              Jump above the Creeps and squash them, but don't let them squash
-              you! Game made in Godot to learn the basics of it.
+              <Trans>Jump above the Creeps and squash them, but don't let them squash
+              you! Game made in Godot to learn the basics of it.</Trans>
             </p>
             <p>
-              I used their official tutorial game, end up preatty well. You can
-              even check the trailer I made{' '}
+              <Trans>I used their official tutorial game, end up preatty well. You can
+              even check the trailer I made</Trans>{' '}
               <a target="_blank" href="https://youtu.be/_5tuvh0qriY">
                 {' '}
-                here
+                <Trans>here</Trans>
               </a>{' '}
-              and check it on GitHub
+              <Trans>and check it on GitHub</Trans>
               <a
                 target="_blank"
                 href="https://github.com/AndreuMB/Squash-the-Creeps-2"
               >
                 {' '}
-                here
+                <Trans>here</Trans>
               </a>
               .
             </p>
@@ -187,30 +188,30 @@ function Projects() {
             img_link="https://andreum.itch.io/egonism"
           >
             <p>
-              Play as a dwarf and farm crystals to claim your deepest desire.
-              Made with Unity, the game engine I've used the most.
+              <Trans>Play as a dwarf and farm crystals to claim your deepest desire.
+              Made with Unity, the game engine I've used the most.</Trans>
             </p>
             <p>
-              This game was showcased at IES Simarro's conference as my final
-              master's project. Check it out on GitHub
+              <Trans>This game was showcased at IES Simarro's conference as my final
+              master's project. Check it out on GitHub</Trans>
               <a
                 target="_blank"
                 href="https://github.com/AndreuMB/GameFinalCEVRV"
               >
                 {' '}
-                here
+                <Trans>here</Trans>
               </a>
               .
             </p>
           </Project>
         </div>
-        <p> You can check all the projects on my <a
+        <p> <Trans>You can check all the projects on my</Trans> <a
           target="_blank"
           href="https://github.com/AndreuMB/"
         >
           {' '}
           GitHub
-        </a> and the released games on my <a
+        </a> <Trans>and the released games on my</Trans> <a
           target="_blank"
           href="https://andreum.itch.io/"
         >

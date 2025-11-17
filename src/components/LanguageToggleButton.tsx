@@ -1,35 +1,10 @@
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { blue, lime, purple, red } from '@mui/material/colors';
+import { blue, red } from '@mui/material/colors';
 import { useState, type MouseEvent } from 'react';
+import { i18n } from "@lingui/core";
 
-
-
-// const theme = createTheme({
-//   colorSchemes: {
-//     light: {
-//       palette: {
-//         primary: lime,
-//       },
-//     },
-//     dark: {
-//       palette: {
-//         primary: purple,
-//       },
-//     },
-//   },
-//   // palette: {
-//   //   // primary: lime,
-//   //   secondary: purple,
-//   //   primary: {
-//   //     main: '#E0C2FF',
-//   //     light: '#F5EBFF',
-//   //     // dark: will be calculated from palette.secondary.main,
-//   //     contrastText: '#47008F',
-//   //   }
-//   // },
-// });
 
 export default function LanguageToggleButton(params: {darkMode: boolean}) {  
   const theme = createTheme({
@@ -52,11 +27,12 @@ export default function LanguageToggleButton(params: {darkMode: boolean}) {
   const [language, setLanguage] = useState('en');
 
   const handleChange = (
-    event: MouseEvent<HTMLElement>,
+    _event: MouseEvent<HTMLElement>,
     newLanguage: string,
   ) => {
     if (newLanguage !== null) {
       setLanguage(newLanguage);
+      i18n.activate(newLanguage);
     }
   };
 
@@ -80,18 +56,3 @@ export default function LanguageToggleButton(params: {darkMode: boolean}) {
 
 
 }
-
-
-// declare module '@mui/material/styles' {
-//   interface Theme {
-//     status: {
-//       danger: string;
-//     };
-//   }
-//   // allow configuration using `createTheme()`
-//   interface ThemeOptions {
-//     status?: {
-//       danger?: string;
-//     };
-//   }
-// }

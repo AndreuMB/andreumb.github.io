@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-11-14 11:32+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. js-lingui-explicit-id
+#: src/components/Header.tsx:75
+msgid "/+Z5u4"
+msgstr "/+Z5u4"
+
+#: src/components/Header.tsx:38
+msgid "About me"
+msgstr "About me"
+
+#: src/components/Header.tsx:39
+msgid "An honest presentation :)"
+msgstr "An honest presentation :)"
+
+#: src/components/Projects.tsx:173
+msgid "and check it on GitHub"
+msgstr "and check it on GitHub"
+
+#: src/components/Projects.tsx:214
+msgid "and the released games on my"
+msgstr "and the released games on my"
+
+#: src/components/Header.tsx:33
+#~ msgid "apple"
+#~ msgstr "apple"
+
+#: src/components/Header.tsx:33
+#~ msgid "banana"
+#~ msgstr "banana"
+
+#: src/components/Projects.tsx:94
+msgid "Click the images to visit their site!"
+msgstr "Click the images to visit their site!"
+
+#: src/components/Header.tsx:65
+msgid "Contact"
+msgstr "Contact"
+
+#: src/components/Projects.tsx:138
+msgid "Create and share music sheets with the world. This was my final degree project in 2022, and I was very proud of it."
+msgstr "Create and share music sheets with the world. This was my final degree project in 2022, and I was very proud of it."
+
+#: src/components/Header.tsx:33
+#~ msgid "extraradio"
+#~ msgstr "extraradio"
+
+#: src/components/Header.tsx:56
+msgid "Fun"
+msgstr "Fun"
+
+#: src/components/Projects.tsx:102
+msgid "Generates random chord progressions based on the scale you select, useful if you want to write songs! Check it on github"
+msgstr "Generates random chord progressions based on the scale you select, useful if you want to write songs! Check it on github"
+
+#: src/components/Projects.tsx:109
+#: src/components/Projects.tsx:127
+#: src/components/Projects.tsx:146
+#: src/components/Projects.tsx:171
+#: src/components/Projects.tsx:179
+#: src/components/Projects.tsx:202
+msgid "here"
+msgstr "here"
+
+#: src/components/Projects.tsx:167
+msgid "I used their official tutorial game, end up preatty well. You can even check the trailer I made"
+msgstr "I used their official tutorial game, end up preatty well. You can even check the trailer I made"
+
+#: src/components/Projects.tsx:142
+msgid "It's cool to see how much I've grown since then. Check it out on GitHub"
+msgstr "It's cool to see how much I've grown since then. Check it out on GitHub"
+
+#: src/components/Projects.tsx:163
+msgid "Jump above the Creeps and squash them, but don't let them squash you! Game made in Godot to learn the basics of it."
+msgstr "Jump above the Creeps and squash them, but don't let them squash you! Game made in Godot to learn the basics of it."
+
+#: src/components/Projects.tsx:120
+msgid "Organize, track, and share your video game journey. Fun project made with Vue.js with a cute BeeStyle. Check it on github"
+msgstr "Organize, track, and share your video game journey. Fun project made with Vue.js with a cute BeeStyle. Check it on github"
+
+#: src/components/Projects.tsx:191
+msgid "Play as a dwarf and farm crystals to claim your deepest desire. Made with Unity, the game engine I've used the most."
+msgstr "Play as a dwarf and farm crystals to claim your deepest desire. Made with Unity, the game engine I've used the most."
+
+#: src/components/Header.tsx:121
+msgid "PORTFOLIO"
+msgstr "PORTFOLIO"
+
+#: src/components/Header.tsx:74
+msgid "Portrait"
+msgstr "Portrait"
+
+#: src/components/Header.tsx:47
+msgid "Projects"
+msgstr "Projects"
+
+#: src/components/Header.tsx:48
+msgid "Some of my work"
+msgstr "Some of my work"
+
+#: src/components/Header.tsx:66
+msgid "Talk with me!"
+msgstr "Talk with me!"
+
+#: src/components/Projects.tsx:195
+msgid "This game was showcased at IES Simarro's conference as my final master's project. Check it out on GitHub"
+msgstr "This game was showcased at IES Simarro's conference as my final master's project. Check it out on GitHub"
+
+#: src/components/Projects.tsx:62
+msgid "TOOLS"
+msgstr "TOOLS"
+
+#: src/components/Header.tsx:57
+msgid "UwU"
+msgstr "UwU"
+
+#: src/components/Projects.tsx:208
+msgid "You can check all the projects on my"
+msgstr "You can check all the projects on my"

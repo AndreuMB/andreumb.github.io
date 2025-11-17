@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-11-14 11:32+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. js-lingui-explicit-id
+#: src/components/Header.tsx:75
+msgid "/+Z5u4"
+msgstr ""
+
+#: src/components/Header.tsx:38
+msgid "About me"
+msgstr "Sobre mí"
+
+#: src/components/Header.tsx:39
+msgid "An honest presentation :)"
+msgstr "Una presentación honesta :)"
+
+#: src/components/Projects.tsx:173
+msgid "and check it on GitHub"
+msgstr "y míralo en GitHub"
+
+#: src/components/Projects.tsx:214
+msgid "and the released games on my"
+msgstr "y los juegos publicados en mi"
+
+#: src/components/Header.tsx:33
+#~ msgid "apple"
+#~ msgstr "poma"
+
+#: src/components/Header.tsx:33
+#~ msgid "banana"
+#~ msgstr "platan"
+
+#: src/components/Projects.tsx:94
+msgid "Click the images to visit their site!"
+msgstr "¡Haz clic en las imágenes para visitar su web!"
+
+#: src/components/Header.tsx:65
+msgid "Contact"
+msgstr "Contacto"
+
+#: src/components/Projects.tsx:138
+msgid "Create and share music sheets with the world. This was my final degree project in 2022, and I was very proud of it."
+msgstr "Crea y comparte partituras con el mundo. Este fue mi proyecto final de grado en 2022, y estaba muy orgulloso de él."
+
+#: src/components/Header.tsx:33
+#~ msgid "extraradio"
+#~ msgstr "radioextra"
+
+#: src/components/Header.tsx:56
+msgid "Fun"
+msgstr "Aburrido?"
+
+#: src/components/Projects.tsx:102
+msgid "Generates random chord progressions based on the scale you select, useful if you want to write songs! Check it on github"
+msgstr "Genera progresiones de acordes aleatorias según la escala que elijas, útil si quieres componer canciones. Échale un vistazo en GitHub"
+
+#: src/components/Projects.tsx:109
+#: src/components/Projects.tsx:127
+#: src/components/Projects.tsx:146
+#: src/components/Projects.tsx:171
+#: src/components/Projects.tsx:179
+#: src/components/Projects.tsx:202
+msgid "here"
+msgstr "aquí"
+
+#: src/components/Projects.tsx:167
+msgid "I used their official tutorial game, end up preatty well. You can even check the trailer I made"
+msgstr "Usé su juego del tutorial oficial, y quedó bastante bien. Incluso puedes ver el tráiler que hice"
+
+#: src/components/Projects.tsx:142
+msgid "It's cool to see how much I've grown since then. Check it out on GitHub"
+msgstr "Es genial ver cuánto he mejorado desde entonces. Échale un vistazo en GitHub"
+
+#: src/components/Projects.tsx:163
+msgid "Jump above the Creeps and squash them, but don't let them squash you! Game made in Godot to learn the basics of it."
+msgstr "Salta sobre los Creeps y aplástalos, ¡pero no dejes que ellos te aplasten! Juego hecho en Godot para aprender lo básico."
+
+#: src/components/Projects.tsx:120
+msgid "Organize, track, and share your video game journey. Fun project made with Vue.js with a cute BeeStyle. Check it on github"
+msgstr "Organiza, registra y comparte tu progreso en videojuegos. Proyecto divertido hecho con Vue.js y un adorable estilo BeeStyle. Échale un vistazo en GitHub"
+
+#: src/components/Projects.tsx:191
+msgid "Play as a dwarf and farm crystals to claim your deepest desire. Made with Unity, the game engine I've used the most."
+msgstr "Juega como un enano y cultiva cristales para cumplir tu deseo más profundo. Hecho con Unity, el motor de juego que más he usado."
+
+#: src/components/Header.tsx:121
+msgid "PORTFOLIO"
+msgstr "PORTAFOLIO"
+
+#: src/components/Header.tsx:74
+msgid "Portrait"
+msgstr "Retrato"
+
+#: src/components/Header.tsx:47
+msgid "Projects"
+msgstr "Proyectos"
+
+#: src/components/Header.tsx:48
+msgid "Some of my work"
+msgstr "Algunos de mis trabajos"
+
+#: src/components/Header.tsx:66
+msgid "Talk with me!"
+msgstr "¡Habla conmigo!"
+
+#: src/components/Projects.tsx:195
+msgid "This game was showcased at IES Simarro's conference as my final master's project. Check it out on GitHub"
+msgstr "Este juego fue presentado en la conferencia del IES Simarro como mi proyecto final de máster Échale un vistazo en GitHub"
+
+#: src/components/Projects.tsx:62
+msgid "TOOLS"
+msgstr "HERRAMIENTAS"
+
+#: src/components/Header.tsx:57
+msgid "UwU"
+msgstr "UwU"
+
+#: src/components/Projects.tsx:208
+msgid "You can check all the projects on my"
+msgstr "Puedes ver todos los proyectos en mi"
