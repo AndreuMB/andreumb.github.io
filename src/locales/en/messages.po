@@ -54,6 +54,10 @@ msgstr "Contact"
 msgid "Create and share music sheets with the world. This was my final degree project in 2022, and I was very proud of it."
 msgstr "Create and share music sheets with the world. This was my final degree project in 2022, and I was very proud of it."
 
+#: src/components/Welcome.tsx:63
+msgid "developer"
+msgstr "developer"
+
 #: src/components/Header.tsx:33
 #~ msgid "extraradio"
 #~ msgstr "extraradio"
@@ -74,6 +78,10 @@ msgstr "Generates random chord progressions based on the scale you select, usefu
 #: src/components/Projects.tsx:202
 msgid "here"
 msgstr "here"
+
+#: src/components/Welcome.tsx:53
+msgid "Hi! I'm Andreu"
+msgstr "Hi! I'm Andreu"
 
 #: src/components/Projects.tsx:167
 msgid "I used their official tutorial game, end up preatty well. You can even check the trailer I made"

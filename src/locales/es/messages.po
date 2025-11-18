@@ -34,14 +34,6 @@ msgstr "y míralo en GitHub"
 msgid "and the released games on my"
 msgstr "y los juegos publicados en mi"
 
-#: src/components/Header.tsx:33
-#~ msgid "apple"
-#~ msgstr "poma"
-
-#: src/components/Header.tsx:33
-#~ msgid "banana"
-#~ msgstr "platan"
-
 #: src/components/Projects.tsx:94
 msgid "Click the images to visit their site!"
 msgstr "¡Haz clic en las imágenes para visitar su web!"
@@ -54,9 +46,9 @@ msgstr "Contacto"
 msgid "Create and share music sheets with the world. This was my final degree project in 2022, and I was very proud of it."
 msgstr "Crea y comparte partituras con el mundo. Este fue mi proyecto final de grado en 2022, y estaba muy orgulloso de él."
 
-#: src/components/Header.tsx:33
-#~ msgid "extraradio"
-#~ msgstr "radioextra"
+#: src/components/Welcome.tsx:63
+msgid "developer"
+msgstr "un desarrollador"
 
 #: src/components/Header.tsx:56
 msgid "Fun"
@@ -74,6 +66,10 @@ msgstr "Genera progresiones de acordes aleatorias según la escala que elijas, �
 #: src/components/Projects.tsx:202
 msgid "here"
 msgstr "aquí"
+
+#: src/components/Welcome.tsx:53
+msgid "Hi! I'm Andreu"
+msgstr "Hola! Soy Andreu"
 
 #: src/components/Projects.tsx:167
 msgid "I used their official tutorial game, end up preatty well. You can even check the trailer I made"
