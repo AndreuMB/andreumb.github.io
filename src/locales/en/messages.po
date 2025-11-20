@@ -75,6 +75,10 @@ msgstr "Click the images to visit their site!"
 msgid "Comfortable using "
 msgstr "Comfortable using "
 
+#: src/pages/Contact.tsx:8
+msgid "Connect with me!"
+msgstr "Connect with me!"
+
 #: src/components/Header.tsx:65
 msgid "Contact"
 msgstr "Contact"
@@ -99,6 +103,10 @@ msgstr "Do you like what you see? send me an email at"
 msgid "Do you want to test your typing skills and know something more about me? Maybe you find some secrets ;)."
 msgstr "Do you want to test your typing skills and know something more about me? Maybe you find some secrets ;)."
 
+#: src/pages/Contact.tsx:27
+msgid "Don't be shy, feel free to reach out, I will be glad to answer."
+msgstr "Don't be shy, feel free to reach out, I will be glad to answer."
+
 #: src/pages/AboutMe.tsx:106
 msgid "Drawing characters"
 msgstr "Drawing characters"
@@ -106,6 +114,10 @@ msgstr "Drawing characters"
 #: src/pages/Fun.tsx:187
 msgid "Easy! Just click the box below and start typing the sentence shown above it. Click outside to save the score."
 msgstr "Easy! Just click the box below and start typing the sentence shown above it. Click outside to save the score."
+
+#: src/pages/Contact.tsx:43
+msgid "Email me!"
+msgstr "Email me!"
 
 #: src/pages/AboutMe.tsx:130
 msgid "English"
@@ -160,6 +172,10 @@ msgstr "Higher Education on Web Development"
 #: src/pages/Fun.tsx:211
 msgid "Hope you have fun!"
 msgstr "Hope you have fun!"
+
+#: src/pages/Contact.tsx:20
+msgid "I have a few years of working experience developing web apps and games and I'm still having a lot of fun programming. I'm excited to keep learning and building new things!"
+msgstr "I have a few years of working experience developing web apps and games and I'm still having a lot of fun programming. I'm excited to keep learning and building new things!"
 
 #: src/pages/AboutMe.tsx:120
 msgid "I have native fluency in"
@@ -221,6 +237,10 @@ msgstr "Post Degree on Game Development"
 msgid "Projects"
 msgstr "Projects"
 
+#: src/pages/Contact.tsx:12
+msgid "SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO!"
+msgstr "SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO!"
+
 #: src/pages/Fun.tsx:171
 msgid "Score"
 msgstr "Score"
@@ -272,3 +292,7 @@ msgstr "Warframe addict"
 #: src/pages/Projects.tsx:230
 msgid "You can check all the projects on my"
 msgstr "You can check all the projects on my"
+
+#: src/pages/Contact.tsx:32
+msgid "You can send me an email at"
+msgstr "You can send me an email at"

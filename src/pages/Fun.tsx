@@ -27,14 +27,14 @@ function Fun() {
   const [currentSentences, setCurretSentences] = useState<string[]>([]);
 
   const sentences_spanish = [
-    "Soy un desarrollador autosuficiente, con buena actitud y siempre dispuesto a ayudar.",
+    "Soy un desarrollador con buena actitud y siempre dispuesto a ayudar.",
     "Esta página fue creada con React y TailwindCSS.",
     "No dudes en preguntar si actualmente estoy disponible para trabajar.",
     "Esta web fue inspirado por un vídeo de Sharlene Yap.",
-    "La música de fondo es una versión de la Canción de las Tormentas de la saga The Legend of Zelda.",
+    'La música de fondo es una versión de la "Canción de las Tormentas" de la saga The Legend of Zelda.',
     "Creé la música de fondo para esta web, puedes activarla en el icóno de arriba a la izquierda.",
     "He sido entrenador de voleibol en mi pueblo durante algunos años.",
-    "Me encanta tocar la guitarra y el piano, entre otros instrumentos.",
+    "Me encanta tocar la guitarra y el piano entre otros instrumentos.",
     "Tengo una cuenta de Instagram donde subo mis dibujos llamada liky00_.",
     "En una fiesta de un amigo, toqué la guitarra eléctrica con una banda.",
     "Pinté mi guitarra de color morado hace un tiempo; fue más difícil de lo que parece.",

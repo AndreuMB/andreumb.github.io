@@ -71,6 +71,10 @@ msgstr "¡Haz clic en las imágenes para visitar su web!"
 msgid "Comfortable using "
 msgstr "Estoy cómodo usando programas de "
 
+#: src/pages/Contact.tsx:8
+msgid "Connect with me!"
+msgstr "Conecta conmigo!"
+
 #: src/components/Header.tsx:65
 msgid "Contact"
 msgstr "Contacto"
@@ -99,13 +103,21 @@ msgstr "Te gusta lo que ves? Envíame un email a"
 msgid "Do you want to test your typing skills and know something more about me? Maybe you find some secrets ;)."
 msgstr "Quieres poner a prueba tus habilidades de escritura y conocer algo más sobre mí? Quizá descubras algún secreto ;)."
 
+#: src/pages/Contact.tsx:27
+msgid "Don't be shy, feel free to reach out, I will be glad to answer."
+msgstr "No seas tímid@, siéntete libre de contactarme, estaré encantado de responder."
+
 #: src/pages/AboutMe.tsx:106
 msgid "Drawing characters"
 msgstr "Dibujar personajes"
 
 #: src/pages/Fun.tsx:187
 msgid "Easy! Just click the box below and start typing the sentence shown above it. Click outside to save the score."
-msgstr "Fácil! Haz clic en el cuadro y comienza a escribir la frase que aparece. Haz clic fuera para guardar la puntuación."
+msgstr "Fácil! Haz clic en el cuadro y comienza a escribir la frase indicada. Haz clic fuera de este para guardar la puntuación."
+
+#: src/pages/Contact.tsx:43
+msgid "Email me!"
+msgstr "Contáctame!"
 
 #: src/pages/AboutMe.tsx:130
 msgid "English"
@@ -159,7 +171,11 @@ msgstr "Formación Superior en Desarrollo Web"
 
 #: src/pages/Fun.tsx:211
 msgid "Hope you have fun!"
-msgstr "Aprendiste algo interesante? ;)"
+msgstr "Aprendiste algo interesante?"
+
+#: src/pages/Contact.tsx:20
+msgid "I have a few years of working experience developing web apps and games and I'm still having a lot of fun programming. I'm excited to keep learning and building new things!"
+msgstr "Tengo experiencia en el desarrollo de aplicaciones web y juegos multiplataforma y sigo disfrutando de la programación como el primer día. Emocionado por seguir aprendiendo y trabajar en proyectos nuevos!"
 
 #: src/pages/AboutMe.tsx:120
 msgid "I have native fluency in"
@@ -221,6 +237,10 @@ msgstr "Especialización en desarrollo de videojuegos"
 msgid "Projects"
 msgstr "Proyectos"
 
+#: src/pages/Contact.tsx:12
+msgid "SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO!"
+msgstr "¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA!"
+
 #: src/pages/Fun.tsx:171
 msgid "Score"
 msgstr "Puntuación"
@@ -272,3 +292,7 @@ msgstr "Proplayer de Warframe"
 #: src/pages/Projects.tsx:230
 msgid "You can check all the projects on my"
 msgstr "Puedes ver todos los proyectos en mi"
+
+#: src/pages/Contact.tsx:32
+msgid "You can send me an email at"
+msgstr "Puedes enviarme un correo a"

@@ -17,10 +17,10 @@ function Welcome() {
   ];
 
   const welcomeSentencesSpanish: WelcomeSentence[] = [
-    { pre: `en constante`, adjective: `movimiento` },
+    { pre: `en inagotable`, adjective: `energía` },
     { pre: `siempre`, adjective: `curioso` },
     { pre: `en permanente`, adjective: `evolución` },
-    { pre: `en incansable`, adjective: `aprendizaje` },
+    { pre: `en constante`, adjective: `aprendizaje` },
   ];
 
   let index = 0;
