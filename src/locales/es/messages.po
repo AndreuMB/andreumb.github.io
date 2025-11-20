@@ -18,6 +18,18 @@ msgstr ""
 msgid "/+Z5u4"
 msgstr ""
 
+#: src/pages/AboutMe.tsx:49
+msgid " like Next.js, NestJS and Vue.js"
+msgstr " como Next.js, NestJS y Vue.js."
+
+#: src/pages/AboutMe.tsx:49
+#~ msgid " like Next.js, NestJS and Vue.js."
+#~ msgstr " como Next.js, NestJS y Vue.js."
+
+#: src/pages/AboutMe.tsx:63
+msgid " softwares like Git to keep projects smooth and organized."
+msgstr " como Git para mantener mis proyectos organizados."
+
 #: src/components/Header.tsx:38
 msgid "About me"
 msgstr "Sobre mí"
@@ -26,68 +38,170 @@ msgstr "Sobre mí"
 msgid "An honest presentation :)"
 msgstr "Una presentación honesta :)"
 
-#: src/components/Projects.tsx:173
+#: src/pages/AboutMe.tsx:54
+#: src/pages/AboutMe.tsx:124
+msgid "and"
+msgstr "y"
+
+#: src/pages/AboutMe.tsx:128
+msgid "and can speak in conversational"
+msgstr "tengo un nivel conversacional en"
+
+#: src/pages/Projects.tsx:189
 msgid "and check it on GitHub"
 msgstr "y míralo en GitHub"
 
-#: src/components/Projects.tsx:214
+#: src/pages/Projects.tsx:235
 msgid "and the released games on my"
 msgstr "y los juegos publicados en mi"
 
-#: src/components/Projects.tsx:94
+#: src/pages/Fun.tsx:174
+msgid "Best Score"
+msgstr "Record"
+
+#: src/pages/AboutMe.tsx:126
+msgid "Catalan (Valencià)"
+msgstr "Valenciano"
+
+#: src/pages/Projects.tsx:97
 msgid "Click the images to visit their site!"
 msgstr "¡Haz clic en las imágenes para visitar su web!"
+
+#: src/pages/AboutMe.tsx:59
+msgid "Comfortable using "
+msgstr "Estoy cómodo usando programas de "
 
 #: src/components/Header.tsx:65
 msgid "Contact"
 msgstr "Contacto"
 
-#: src/components/Projects.tsx:138
+#: src/pages/Projects.tsx:146
 msgid "Create and share music sheets with the world. This was my final degree project in 2022, and I was very proud of it."
 msgstr "Crea y comparte partituras con el mundo. Este fue mi proyecto final de grado en 2022, y estaba muy orgulloso de él."
 
+#: src/pages/AboutMe.tsx:56
+msgid "databases, including Firebase and Supabase."
+msgstr "incluyendo Firebase y Supabase."
+
 #: src/components/Welcome.tsx:63
-msgid "developer"
-msgstr "un desarrollador"
+#~ msgid "developer"
+#~ msgstr "un desarrollador"
+
+#: src/pages/AboutMe.tsx:71
+msgid "Do you like what you see? send me an email at"
+msgstr "Te gusta lo que ves? Envíame un email a"
+
+#: src/pages/AboutMe.tsx:67
+#~ msgid "Do you like what you see? Send me an email at"
+#~ msgstr "Te gusta lo que ves? Enviame un email a"
+
+#: src/pages/Fun.tsx:181
+msgid "Do you want to test your typing skills and know something more about me? Maybe you find some secrets ;)."
+msgstr "Quieres poner a prueba tus habilidades de escritura y conocer algo más sobre mí? Quizá descubras algún secreto ;)."
+
+#: src/pages/AboutMe.tsx:106
+msgid "Drawing characters"
+msgstr "Dibujar personajes"
+
+#: src/pages/Fun.tsx:187
+msgid "Easy! Just click the box below and start typing the sentence shown above it. Click outside to save the score."
+msgstr "Fácil! Haz clic en el cuadro y comienza a escribir la frase que aparece. Haz clic fuera para guardar la puntuación."
+
+#: src/pages/AboutMe.tsx:130
+msgid "English"
+msgstr "Inglés"
+
+#: src/pages/AboutMe.tsx:42
+msgid "frontend development"
+msgstr "desarrollo frontend"
+
+#: src/pages/AboutMe.tsx:42
+#~ msgid "frontend development "
+#~ msgstr "desarrollo frontend "
 
 #: src/components/Header.tsx:56
 msgid "Fun"
 msgstr "Aburrido?"
 
-#: src/components/Projects.tsx:102
+#: src/pages/AboutMe.tsx:100
+msgid "Game development"
+msgstr "Desarrollo de videojuegos"
+
+#: src/pages/Projects.tsx:106
 msgid "Generates random chord progressions based on the scale you select, useful if you want to write songs! Check it on github"
 msgstr "Genera progresiones de acordes aleatorias según la escala que elijas, útil si quieres componer canciones. Échale un vistazo en GitHub"
 
-#: src/components/Projects.tsx:109
-#: src/components/Projects.tsx:127
-#: src/components/Projects.tsx:146
-#: src/components/Projects.tsx:171
-#: src/components/Projects.tsx:179
-#: src/components/Projects.tsx:202
+#: src/pages/AboutMe.tsx:84
+#: src/pages/AboutMe.tsx:92
+msgid "GRADUATED"
+msgstr "GRADUADO"
+
+#: src/pages/Projects.tsx:115
+#: src/pages/Projects.tsx:135
+#: src/pages/Projects.tsx:158
+#: src/pages/Projects.tsx:187
+#: src/pages/Projects.tsx:195
+#: src/pages/Projects.tsx:222
 msgid "here"
 msgstr "aquí"
 
-#: src/components/Welcome.tsx:53
+#: src/pages/AboutMe.tsx:34
+msgid "Hey! I'm Andreu, a web developer and a game developer in process!"
+msgstr "Hola! Soy Andreu, desarrollador web y en proceso de aprender desarrollo de videojuegos."
+
+#: src/components/Welcome.tsx:55
 msgid "Hi! I'm Andreu"
 msgstr "Hola! Soy Andreu"
 
-#: src/components/Projects.tsx:167
+#: src/pages/AboutMe.tsx:89
+msgid "Higher Education on Web Development"
+msgstr "Formación Superior en Desarrollo Web"
+
+#: src/pages/Fun.tsx:211
+msgid "Hope you have fun!"
+msgstr "Aprendiste algo interesante? ;)"
+
+#: src/pages/AboutMe.tsx:120
+msgid "I have native fluency in"
+msgstr "Mis idiomas nativos son "
+
+#: src/pages/AboutMe.tsx:47
+msgid "I know my things around modern "
+msgstr "Me manejo en "
+
+#: src/pages/Projects.tsx:181
 msgid "I used their official tutorial game, end up preatty well. You can even check the trailer I made"
 msgstr "Usé su juego del tutorial oficial, y quedó bastante bien. Incluso puedes ver el tráiler que hice"
 
-#: src/components/Projects.tsx:142
+#: src/pages/AboutMe.tsx:52
+msgid "I've handled both "
+msgstr "He trabajado con bases de datos "
+
+#: src/pages/Projects.tsx:152
 msgid "It's cool to see how much I've grown since then. Check it out on GitHub"
 msgstr "Es genial ver cuánto he mejorado desde entonces. Échale un vistazo en GitHub"
 
-#: src/components/Projects.tsx:163
+#: src/pages/Projects.tsx:175
 msgid "Jump above the Creeps and squash them, but don't let them squash you! Game made in Godot to learn the basics of it."
 msgstr "Salta sobre los Creeps y aplástalos, ¡pero no dejes que ellos te aplasten! Juego hecho en Godot para aprender lo básico."
 
-#: src/components/Projects.tsx:120
+#: src/pages/AboutMe.tsx:116
+msgid "LANGUAGE PROFICIENCY"
+msgstr "IDIOMAS"
+
+#: src/pages/Projects.tsx:126
 msgid "Organize, track, and share your video game journey. Fun project made with Vue.js with a cute BeeStyle. Check it on github"
 msgstr "Organiza, registra y comparte tu progreso en videojuegos. Proyecto divertido hecho con Vue.js y un adorable estilo BeeStyle. Échale un vistazo en GitHub"
 
-#: src/components/Projects.tsx:191
+#: src/pages/AboutMe.tsx:96
+msgid "OTHER INTERESTS"
+msgstr "OTROS INTERESES"
+
+#: src/pages/AboutMe.tsx:103
+msgid "Passionate guitar player"
+msgstr "Disfruto tocando la guitarra"
+
+#: src/pages/Projects.tsx:207
 msgid "Play as a dwarf and farm crystals to claim your deepest desire. Made with Unity, the game engine I've used the most."
 msgstr "Juega como un enano y cultiva cristales para cumplir tu deseo más profundo. Hecho con Unity, el motor de juego que más he usado."
 
@@ -99,30 +213,62 @@ msgstr "PORTAFOLIO"
 msgid "Portrait"
 msgstr "Retrato"
 
+#: src/pages/AboutMe.tsx:81
+msgid "Post Degree on Game Development"
+msgstr "Especialización en desarrollo de videojuegos"
+
 #: src/components/Header.tsx:47
 msgid "Projects"
 msgstr "Proyectos"
+
+#: src/pages/Fun.tsx:171
+msgid "Score"
+msgstr "Puntuación"
 
 #: src/components/Header.tsx:48
 msgid "Some of my work"
 msgstr "Algunos de mis trabajos"
 
+#: src/pages/AboutMe.tsx:122
+msgid "Spanish"
+msgstr "Español"
+
 #: src/components/Header.tsx:66
 msgid "Talk with me!"
 msgstr "¡Habla conmigo!"
 
-#: src/components/Projects.tsx:195
-msgid "This game was showcased at IES Simarro's conference as my final master's project. Check it out on GitHub"
-msgstr "Este juego fue presentado en la conferencia del IES Simarro como mi proyecto final de máster Échale un vistazo en GitHub"
+#: src/pages/AboutMe.tsx:40
+msgid "This days I am focused on "
+msgstr "Actualmente estoy centrado en "
 
-#: src/components/Projects.tsx:62
+#: src/pages/Projects.tsx:213
+msgid "This game was showcased at IES Simarro's conference as my final master's project. Check it out on GitHub"
+msgstr "Este juego fue presentado en la conferencia del IES Simarro como mi proyecto final de máster. Échale un vistazo en GitHub"
+
+#: src/pages/Projects.tsx:63
 msgid "TOOLS"
 msgstr "HERRAMIENTAS"
+
+#: src/pages/Fun.tsx:167
+msgid "Typing Game"
+msgstr ""
 
 #: src/components/Header.tsx:57
 msgid "UwU"
 msgstr "UwU"
 
-#: src/components/Projects.tsx:208
+#: src/pages/AboutMe.tsx:61
+msgid "version control"
+msgstr "control de versiones"
+
+#: src/pages/AboutMe.tsx:109
+msgid "Volleyball"
+msgstr "Jugar a voleibol"
+
+#: src/pages/AboutMe.tsx:112
+msgid "Warframe addict"
+msgstr "Proplayer de Warframe"
+
+#: src/pages/Projects.tsx:230
 msgid "You can check all the projects on my"
 msgstr "Puedes ver todos los proyectos en mi"

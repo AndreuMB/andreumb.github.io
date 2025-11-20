@@ -1,65 +1,67 @@
-import useSound from 'use-sound';
-import Project from './Project';
-import key1 from '/src/assets/sounds/key1.mp3';
-import key2 from '/src/assets/sounds/key2.mp3';
-import key3 from '/src/assets/sounds/key3.mp3';
-import key4 from '/src/assets/sounds/key4.mp3';
-import key5 from '/src/assets/sounds/key5.mp3';
-import myvideogamelistImg from '/src/assets/MVL_banner.png'
-import pianetImg from '/src/assets/pianet_icon2.png'
-import STC2Img from '/src/assets/STC2-logo.png'
-import egonismImg from '/src/assets/Egonism1.png'
-import pianoImg from '/src/assets/piano.png'
+import useSound from "use-sound";
+import Project from "../components/Project";
+import key1 from "/src/assets/sounds/key1.mp3";
+import key2 from "/src/assets/sounds/key2.mp3";
+import key3 from "/src/assets/sounds/key3.mp3";
+import key4 from "/src/assets/sounds/key4.mp3";
+import key5 from "/src/assets/sounds/key5.mp3";
+import myvideogamelistImg from "/src/assets/MVL_banner.png";
+import pianetImg from "/src/assets/pianet_icon2.png";
+import STC2Img from "/src/assets/STC2-logo.png";
+import egonismImg from "/src/assets/Egonism1.png";
+import pianoImg from "/src/assets/piano.png";
 import { Trans } from "@lingui/react/macro";
 
 function Projects() {
   const toolsList = [
-    'Git',
-    'Docker',
-    'Postman',
-    'Supabase',
-    'Unity',
-    'Godot',
-    'Photoshop',
-    'Blender',
-    'Linux',
-    'Windows',
-    'Mac',
+    "Git",
+    "Docker",
+    "Postman",
+    "Supabase",
+    "Unity",
+    "Godot",
+    "Photoshop",
+    "Blender",
+    "Linux",
+    "Windows",
+    "Mac",
   ];
   const skillsList = [
-    'TypeScript',
-    'Vue.js',
-    'MySql',
-    'React',
-    'Next.js',
-    'NestJS',
-    'Ionic',
-    'Tailwind',
-    'C#',
-    'PHP',
-    'GDScript',
-    'Netcode',
-    'XRTools',
-    'Vuforia',
+    "TypeScript",
+    "Vue.js",
+    "MySql",
+    "React",
+    "Next.js",
+    "NestJS",
+    "Ionic",
+    "Tailwind",
+    "C#",
+    "PHP",
+    "GDScript",
+    "Netcode",
+    "XRTools",
+    "Vuforia",
   ];
 
-  const [playKey1] = useSound(key1)
-  const [playKey2] = useSound(key2)
-  const [playKey3] = useSound(key3)
-  const [playKey4] = useSound(key4)
-  const [playKey5] = useSound(key5)
+  const [playKey1] = useSound(key1);
+  const [playKey2] = useSound(key2);
+  const [playKey3] = useSound(key3);
+  const [playKey4] = useSound(key4);
+  const [playKey5] = useSound(key5);
 
-  const keysSound = [playKey1, playKey2, playKey3, playKey4, playKey5]
+  const keysSound = [playKey1, playKey2, playKey3, playKey4, playKey5];
 
   const playRandomKey = () => {
-    keysSound[Math.floor(Math.random() * keysSound.length)]()
-  }
+    keysSound[Math.floor(Math.random() * keysSound.length)]();
+  };
 
   return (
     <div className="p-5 flex flex-col gap-6">
       <div className="flex gap-6 skills-list">
         <div className="w-1/2">
-          <h2><Trans>TOOLS</Trans></h2>
+          <h2>
+            <Trans>TOOLS</Trans>
+          </h2>
           <ul className="list flex gap-2 flex-wrap">
             {toolsList.map((tool) => (
               <li
@@ -91,7 +93,9 @@ function Projects() {
 
       <div>
         <h2>WEBAPPS</h2>
-        <p className="mb-2"><Trans>Click the images to visit their site!</Trans></p>
+        <p className="mb-2">
+          <Trans>Click the images to visit their site!</Trans>
+        </p>
         <div className="flex flex-col gap-4">
           <Project
             name="CHORD PROGRESSION MAKER"
@@ -99,13 +103,15 @@ function Projects() {
             img_link="https://chordprogressionmanker.netlify.app/"
           >
             <p>
-              <Trans>Generates random chord progressions based on the scale you select, 
-              useful if you want to write songs! Check it on github</Trans>
+              <Trans>
+                Generates random chord progressions based on the scale you
+                select, useful if you want to write songs! Check it on github
+              </Trans>
               <a
                 target="_blank"
                 href="https://github.com/AndreuMB/chord-progression-maker"
               >
-                {' '}
+                {" "}
                 <Trans>here</Trans>
               </a>
               .
@@ -117,13 +123,15 @@ function Projects() {
             img_link="https://my-videogamelist.netlify.app/"
           >
             <p>
-              <Trans>Organize, track, and share your video game journey. Fun project
-              made with Vue.js with a cute BeeStyle. Check it on github</Trans>
+              <Trans>
+                Organize, track, and share your video game journey. Fun project
+                made with Vue.js with a cute BeeStyle. Check it on github
+              </Trans>
               <a
                 target="_blank"
                 href="https://github.com/AndreuMB/MyVideogameList"
               >
-                {' '}
+                {" "}
                 <Trans>here</Trans>
               </a>
               .
@@ -135,14 +143,18 @@ function Projects() {
             img_link="https://pianet.netlify.app/"
           >
             <p>
-              <Trans>Create and share music sheets with the world. This was my final
-              degree project in 2022, and I was very proud of it.</Trans>
+              <Trans>
+                Create and share music sheets with the world. This was my final
+                degree project in 2022, and I was very proud of it.
+              </Trans>
             </p>
             <p>
-              <Trans>It's cool to see how much I've grown since then. Check it out on
-              GitHub</Trans>
+              <Trans>
+                It's cool to see how much I've grown since then. Check it out on
+                GitHub
+              </Trans>
               <a target="_blank" href="https://github.com/AndreuMB/PianetVue">
-                {' '}
+                {" "}
                 <Trans>here</Trans>
               </a>
               .
@@ -160,22 +172,26 @@ function Projects() {
             img_link="https://andreum.itch.io/squash-the-creeps-2"
           >
             <p>
-              <Trans>Jump above the Creeps and squash them, but don't let them squash
-              you! Game made in Godot to learn the basics of it.</Trans>
+              <Trans>
+                Jump above the Creeps and squash them, but don't let them squash
+                you! Game made in Godot to learn the basics of it.
+              </Trans>
             </p>
             <p>
-              <Trans>I used their official tutorial game, end up preatty well. You can
-              even check the trailer I made</Trans>{' '}
+              <Trans>
+                I used their official tutorial game, end up preatty well. You
+                can even check the trailer I made
+              </Trans>{" "}
               <a target="_blank" href="https://youtu.be/_5tuvh0qriY">
-                {' '}
+                {" "}
                 <Trans>here</Trans>
-              </a>{' '}
+              </a>{" "}
               <Trans>and check it on GitHub</Trans>
               <a
                 target="_blank"
                 href="https://github.com/AndreuMB/Squash-the-Creeps-2"
               >
-                {' '}
+                {" "}
                 <Trans>here</Trans>
               </a>
               .
@@ -188,36 +204,41 @@ function Projects() {
             img_link="https://andreum.itch.io/egonism"
           >
             <p>
-              <Trans>Play as a dwarf and farm crystals to claim your deepest desire.
-              Made with Unity, the game engine I've used the most.</Trans>
+              <Trans>
+                Play as a dwarf and farm crystals to claim your deepest desire.
+                Made with Unity, the game engine I've used the most.
+              </Trans>
             </p>
             <p>
-              <Trans>This game was showcased at IES Simarro's conference as my final
-              master's project. Check it out on GitHub</Trans>
+              <Trans>
+                This game was showcased at IES Simarro's conference as my final
+                master's project. Check it out on GitHub
+              </Trans>
               <a
                 target="_blank"
                 href="https://github.com/AndreuMB/GameFinalCEVRV"
               >
-                {' '}
+                {" "}
                 <Trans>here</Trans>
               </a>
               .
             </p>
           </Project>
         </div>
-        <p> <Trans>You can check all the projects on my</Trans> <a
-          target="_blank"
-          href="https://github.com/AndreuMB/"
-        >
-          {' '}
-          GitHub
-        </a> <Trans>and the released games on my</Trans> <a
-          target="_blank"
-          href="https://andreum.itch.io/"
-        >
-            {' '}
+        <p>
+          {" "}
+          <Trans>You can check all the projects on my</Trans>{" "}
+          <a target="_blank" href="https://github.com/AndreuMB/">
+            {" "}
+            GitHub
+          </a>{" "}
+          <Trans>and the released games on my</Trans>{" "}
+          <a target="_blank" href="https://andreum.itch.io/">
+            {" "}
             itch.io
-          </a>.</p>
+          </a>
+          .
+        </p>
       </div>
     </div>
   );

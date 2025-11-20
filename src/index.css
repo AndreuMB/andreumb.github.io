@@ -12,11 +12,10 @@
 }
 
 .light {
-
-  --primary-color: #9ADDFF;
+  --primary-color: #9addff;
   --primary-light-color: #4288d8c5;
   --primary-shadow-color: #4288d845;
-  --secondary-color: #2E2E3A;
+  --secondary-color: #2e2e3a;
   --secondary-light-color: #e8eef2;
   --secondary-shadow-color: #ffffff44;
   --terciary-color: #fffea8;
@@ -25,21 +24,20 @@
 }
 
 .dark {
-
   --primary-color: #160d27;
   --primary-light-color: #9f84cad0;
   --primary-shadow-color: #6c66c86b;
 
-  --secondary-color: #ECDD7B;
+  --secondary-color: #ecdd7b;
   --secondary-light-color: #b9b9b9;
   --secondary-shadow-color: #ecdd7b43;
   --terciary-color: #dca8fb;
   --terciary-light-color: #ff89ed;
 }
 
-
 body {
-  font-family: 'Courier New', 'MV Boli', 'Comic Sans MS', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Courier New", "MV Boli", "Comic Sans MS", system-ui, Avenir,
+    Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   padding: 2em;
@@ -53,7 +51,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-
 }
 
 a {
@@ -132,4 +129,16 @@ footer {
 .simple-button:hover {
   background-color: transparent;
   border: none;
+}
+
+.list span {
+  color: var(--secondary-color);
+}
+
+.list {
+  list-style: none;
+}
+
+span {
+  color: var(--secondary-color);
 }

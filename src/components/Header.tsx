@@ -8,13 +8,13 @@ import {
 import "./Header.css";
 import { FaChevronRight } from "react-icons/fa";
 import Draggable from "react-draggable";
-import AboutMe from "./AboutMe";
-import Contact from "./Contact";
-import Projects from "./Projects";
-import Fun from "./Fun";
+import AboutMe from "../pages/AboutMe";
+import Contact from "../pages/Contact";
+import Projects from "../pages/Projects";
+import Fun from "../pages/Fun";
 import mouseClick from "/src/assets/sounds/mouse_click.mp3";
 import useSound from "use-sound";
-import Portrait from "./Portrait";
+import Portrait from "../pages/Portrait";
 import { msg } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
 import { Trans as TransD } from "@lingui/react";

@@ -16,7 +16,7 @@ i18n.load({
 
 console.log("default user language = " + navigator.language.split("-")[0]);
 i18n.activate(navigator.language.split("-")[0]);
-// i18n.activate("es");
+i18n.activate("es");
 
 function App() {
   return (

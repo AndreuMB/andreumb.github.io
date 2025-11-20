@@ -2,7 +2,7 @@ header {
   color: var(--primary-color);
 }
 
-nav>button {
+nav > button {
   border-radius: 0;
   width: 100%;
   text-align: left;
@@ -11,7 +11,6 @@ nav>button {
   justify-content: space-between;
   align-items: center;
 }
-
 
 nav button:hover {
   background-color: var(--secondary-color);
@@ -34,14 +33,6 @@ button:hover .description {
   scrollbar-color: var(--secondary-color) transparent;
   scrollbar-width: thin;
   height: 100%;
-}
-
-.list span {
-  color: var(--secondary-color);
-}
-
-.list {
-  list-style: none;
 }
 
 .skills-list li {
