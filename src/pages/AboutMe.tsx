@@ -28,7 +28,7 @@ function AboutMe({ onShowPortrait }: AboutMeProps) {
           </div>
         </div>
       </header>
-      <div className="p-5">
+      <div className="p-5 about-me-body">
         <div>
           <div className="pb-3">
             <Trans>
@@ -118,15 +118,15 @@ function AboutMe({ onShowPortrait }: AboutMeProps) {
         <div className="my-2 border-l-4 pl-3 border-gray-lightest">
           <p>
             <Trans>I have native fluency in</Trans>{" "}
-            <span className="">
+            <span>
               <Trans>Spanish</Trans>
             </span>{" "}
             <Trans>and</Trans>{" "}
-            <span className="">
+            <span>
               <Trans>Catalan (Valencià)</Trans>
             </span>
             , <Trans>and can speak in conversational</Trans>{" "}
-            <span className="">
+            <span>
               <Trans>English</Trans>
             </span>
             .

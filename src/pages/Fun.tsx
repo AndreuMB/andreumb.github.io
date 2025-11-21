@@ -5,6 +5,7 @@ import {
   useEffect,
   useRef,
   useState,
+  type ChangeEvent,
   type KeyboardEvent,
   type ReactElement,
 } from "react";
@@ -30,14 +31,14 @@ function Fun() {
     "Soy un desarrollador con buena actitud y siempre dispuesto a ayudar.",
     "Esta página fue creada con React y TailwindCSS.",
     "No dudes en preguntar si actualmente estoy disponible para trabajar.",
-    "Esta web fue inspirado por un vídeo de Sharlene Yap.",
+    "Esta web fue inspirada por un vídeo de Sharlene Yap.",
     'La música de fondo es una versión de la "Canción de las Tormentas" de la saga The Legend of Zelda.',
     "Creé la música de fondo para esta web, puedes activarla en el icóno de arriba a la izquierda.",
     "He sido entrenador de voleibol en mi pueblo durante algunos años.",
     "Me encanta tocar la guitarra y el piano entre otros instrumentos.",
     "Tengo una cuenta de Instagram donde subo mis dibujos llamada liky00_.",
     "En una fiesta de un amigo, toqué la guitarra eléctrica con una banda.",
-    "Pinté mi guitarra de color morado hace un tiempo; fue más difícil de lo que parece.",
+    "Pinté mi guitarra de color morado hace un tiempo, fue más difícil de lo que parece.",
   ];
 
   const [score, setScore] = useState(0);
@@ -106,23 +107,16 @@ function Fun() {
     setSentenceDone([]);
   };
 
-  const checkTyping = (e: KeyboardEvent) => {
-    const htmlElement = e.target as HTMLInputElement;
-    const value = htmlElement.value;
+  const checkTyping = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    const value = e.target.value;
 
-    const currentChar = sentence.charAt(value.length);
+    const charValue = value.slice(-1);
 
-    if (e.key === "Shift" || e.key === "Control") return;
+    const currentChar = sentence.charAt(value.length - 1);
 
-    // handle backspace
-    if (e.key === "Backspace") {
-      const prevChar = sentence.charAt(value.length - 1);
-      sentenceDone.splice(-1);
-      setSentenceDone([...sentenceDone]);
-      // setSentenceLeft((prevChar === ' ' ? '\u00A0' : prevChar) + sentenceLeft);
-      setSentenceLeft(prevChar + sentenceLeft);
-      return;
-    }
+    if (value.length <= sentenceDone.length) return;
+
+    if (charValue === "´") return;
 
     // handle finish sentence
     if (sentence.length === value.length + 1) {
@@ -134,11 +128,11 @@ function Fun() {
     }
 
     // handle score
-    setScore(currentChar === e.key ? score + 1 : score - 4);
+    setScore(currentChar === charValue ? score + 1 : score - 4);
 
     // handle create element
     const color =
-      currentChar === e.key ? "text-primary" : "text-terciary-light";
+      currentChar === charValue ? "text-primary" : "text-terciary-light";
     const charElement = createElement(
       "span",
       { className: color, key: value.length },
@@ -152,11 +146,35 @@ function Fun() {
     }
 
     if (sentenceLeft.charAt(1) === " ") {
-      // setSentenceLeft('\u00A0' + sentenceLeft.slice(1).trim());
       setSentenceLeft(sentenceLeft.slice(1));
     } else {
       setSentenceLeft(sentenceLeft.slice(1));
     }
+  };
+
+  let accent = false;
+
+  const checkBackspace = (e: KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key !== "Backspace") return;
+
+    const value = e.currentTarget.value;
+
+    // this means the user delete an accent
+    if (accent) {
+      accent = false;
+      return;
+    }
+
+    if (value.length !== sentenceDone.length) {
+      accent = true;
+      return;
+    }
+
+    const prevChar = sentence.charAt(value.length - 1);
+
+    sentenceDone.pop();
+    setSentenceDone([...sentenceDone]);
+    setSentenceLeft(prevChar + sentenceLeft);
   };
 
   return (
@@ -192,8 +210,8 @@ function Fun() {
         </div>
       </div>
 
-      <div className="container gap-3 flex flex-col bg-primary-light p-2 rounded">
-        <div className="break-words text-secondary">
+      <div className="gap-3 flex flex-col bg-primary-light p-2 rounded">
+        <div className="break-words quote-text text-secondary">
           {sentenceDone}
           {sentenceLeft}
         </div>
@@ -204,7 +222,8 @@ function Fun() {
           rows={4}
           ref={textareaRef}
           className="quote-input bg-secondary w-full"
-          onKeyDown={(e) => checkTyping(e)}
+          onChange={(e) => checkTyping(e)}
+          onKeyDown={(e) => checkBackspace(e)}
         ></textarea>
       </div>
       <div>
