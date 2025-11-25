@@ -1,5 +1,6 @@
 import {
   Fragment,
+  useEffect,
   useRef,
   useState,
   type ComponentType,
@@ -19,6 +20,7 @@ import { msg } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
 import { Trans as TransD } from "@lingui/react";
 import type { MessageDescriptor } from "@lingui/core";
+import TransitionsModal from "./Modal";
 
 interface NavEntry {
   ref: RefObject<null>;
@@ -115,8 +117,21 @@ function Header() {
     setNavEntries(updatedEntries);
   };
 
+  useEffect(() => {
+    if (isMobile()) setOpen(true);
+  }, []);
+
+  function isMobile() {
+    const minWidth = 768; // Minimum width for desktop devices
+    return window.innerWidth < minWidth || screen.width < minWidth;
+  }
+
+  const [open, setOpen] = useState(false);
+  const onClose = () => setOpen(false);
+
   return (
     <header className="mt-12">
+      <TransitionsModal open={open} onClose={onClose}></TransitionsModal>
       <h1 className="text-secondary mb-6">
         <Trans>PORTFOLIO</Trans>
       </h1>

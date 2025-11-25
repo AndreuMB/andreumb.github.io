@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: src/components/Header.tsx:75
+#: src/components/Header.tsx:77
 msgid "/+Z5u4"
 msgstr "/+Z5u4"
 
@@ -30,20 +30,20 @@ msgstr " softwares like Git to keep projects smooth and organized"
 #~ msgid " softwares like Git to keep projects smooth and organized."
 #~ msgstr " softwares like Git to keep projects smooth and organized."
 
-#: src/components/Header.tsx:38
+#: src/components/Header.tsx:40
 msgid "About me"
 msgstr "About me"
 
-#: src/components/Header.tsx:39
+#: src/components/Header.tsx:41
 msgid "An honest presentation :)"
 msgstr "An honest presentation :)"
 
 #: src/components/TabPanelJobs.tsx:89
-#: src/pages/AboutMe.tsx:100
+#: src/pages/AboutMe.tsx:130
 msgid "and"
 msgstr "and"
 
-#: src/pages/AboutMe.tsx:104
+#: src/pages/AboutMe.tsx:134
 msgid "and can speak in conversational"
 msgstr "and can speak in conversational"
 
@@ -67,7 +67,7 @@ msgstr "and the released games on my"
 msgid "Best Score"
 msgstr "Best Score"
 
-#: src/pages/AboutMe.tsx:102
+#: src/pages/AboutMe.tsx:132
 msgid "Catalan (Valencià)"
 msgstr "Catalan (Valencià)"
 
@@ -83,7 +83,7 @@ msgstr "Comfortable using "
 msgid "Connect with me!"
 msgstr "Connect with me!"
 
-#: src/components/Header.tsx:65
+#: src/components/Header.tsx:67
 msgid "Contact"
 msgstr "Contact"
 
@@ -99,7 +99,7 @@ msgstr "databases, including Firebase and Supabase."
 #~ msgid "developer"
 #~ msgstr "developer"
 
-#: src/pages/AboutMe.tsx:39
+#: src/pages/AboutMe.tsx:69
 msgid "Do you like what you read? send me an email at"
 msgstr "Do you like what you read? send me an email at"
 
@@ -115,7 +115,7 @@ msgstr "Do you want to test your typing skills and know something more about me?
 msgid "Don't be shy, feel free to reach out, I will be glad to answer."
 msgstr "Don't be shy, feel free to reach out, I will be glad to answer."
 
-#: src/pages/AboutMe.tsx:79
+#: src/pages/AboutMe.tsx:109
 msgid "Drawing characters"
 msgstr "Drawing characters"
 
@@ -129,7 +129,7 @@ msgstr "Email me!"
 
 #: src/components/TabPanelJobs.tsx:120
 #: src/components/TabPanelJobs.tsx:180
-#: src/pages/AboutMe.tsx:106
+#: src/pages/AboutMe.tsx:136
 msgid "English"
 msgstr "English"
 
@@ -145,7 +145,7 @@ msgstr "Even if my focus is in programming I made models in <0>Blender</0> and t
 msgid "frontend development"
 msgstr "frontend development"
 
-#: src/components/Header.tsx:56
+#: src/components/Header.tsx:58
 msgid "Fun"
 msgstr "Fun"
 
@@ -153,7 +153,7 @@ msgstr "Fun"
 msgid "Game Developer"
 msgstr "Game Developer"
 
-#: src/pages/AboutMe.tsx:73
+#: src/pages/AboutMe.tsx:103
 msgid "Game development"
 msgstr "Game development"
 
@@ -161,8 +161,8 @@ msgstr "Game development"
 msgid "Generates random chord progressions based on the scale you select, useful if you want to write songs! Check it on github"
 msgstr "Generates random chord progressions based on the scale you select, useful if you want to write songs! Check it on github"
 
-#: src/pages/AboutMe.tsx:54
-#: src/pages/AboutMe.tsx:62
+#: src/pages/AboutMe.tsx:84
+#: src/pages/AboutMe.tsx:92
 msgid "GRADUATED"
 msgstr "GRADUATED"
 
@@ -175,7 +175,7 @@ msgstr "GRADUATED"
 msgid "here"
 msgstr "here"
 
-#: src/pages/AboutMe.tsx:33
+#: src/pages/AboutMe.tsx:63
 msgid "Hey! I'm Andreu, a web developer and a game developer in process!"
 msgstr "Hey! I'm Andreu, a web developer and a game developer in process!"
 
@@ -183,7 +183,7 @@ msgstr "Hey! I'm Andreu, a web developer and a game developer in process!"
 msgid "Hi! I'm Andreu"
 msgstr "Hi! I'm Andreu"
 
-#: src/pages/AboutMe.tsx:59
+#: src/pages/AboutMe.tsx:89
 msgid "Higher Education on Web Development"
 msgstr "Higher Education on Web Development"
 
@@ -199,7 +199,7 @@ msgstr "I did <0>multiplayer</0> projects using Netcode and <1>VR/AR</1> project
 msgid "I have a few years of working experience developing web apps and games and I'm still having a lot of fun programming. I'm excited to keep learning and building new things!"
 msgstr "I have a few years of working experience developing web apps and games and I'm still having a lot of fun programming. I'm excited to keep learning and building new things!"
 
-#: src/pages/AboutMe.tsx:96
+#: src/pages/AboutMe.tsx:126
 msgid "I have native fluency in"
 msgstr "I have native fluency in"
 
@@ -210,6 +210,10 @@ msgstr "I have some projects on <0>Godot</0> too, where I learned the basics of 
 #: src/components/TabPanelJobs.tsx:82
 msgid "I know my things around modern "
 msgstr "I know my things around modern "
+
+#: src/components/Modal.tsx:54
+msgid "I strongly recommend to use a device whith a larger screen."
+msgstr "I strongly recommend to use a device whith a larger screen."
 
 #: src/pages/Projects.tsx:181
 msgid "I used their official tutorial game, end up preatty well. You can even check the trailer I made"
@@ -227,9 +231,13 @@ msgstr "It's cool to see how much I've grown since then. Check it out on GitHub"
 msgid "Jump above the Creeps and squash them, but don't let them squash you! Game made in Godot to learn the basics of it."
 msgstr "Jump above the Creeps and squash them, but don't let them squash you! Game made in Godot to learn the basics of it."
 
-#: src/pages/AboutMe.tsx:92
+#: src/pages/AboutMe.tsx:122
 msgid "LANGUAGE PROFICIENCY"
 msgstr "LANGUAGE PROFICIENCY"
+
+#: src/components/Modal.tsx:51
+msgid "Mobile Device Detected"
+msgstr "Mobile Device Detected"
 
 #: src/components/TabPanelJobs.tsx:109
 #~ msgid "Most of my experience is in "
@@ -247,11 +255,11 @@ msgstr "Most of my experience is in <0>Unity</0> where I developed all kind of g
 msgid "Organize, track, and share your video game journey. Fun project made with Vue.js with a cute BeeStyle. Check it on github"
 msgstr "Organize, track, and share your video game journey. Fun project made with Vue.js with a cute BeeStyle. Check it on github"
 
-#: src/pages/AboutMe.tsx:69
+#: src/pages/AboutMe.tsx:99
 msgid "OTHER INTERESTS"
 msgstr "OTHER INTERESTS"
 
-#: src/pages/AboutMe.tsx:76
+#: src/pages/AboutMe.tsx:106
 msgid "Passionate guitar player"
 msgstr "Passionate guitar player"
 
@@ -259,19 +267,19 @@ msgstr "Passionate guitar player"
 msgid "Play as a dwarf and farm crystals to claim your deepest desire. Made with Unity, the game engine I've used the most."
 msgstr "Play as a dwarf and farm crystals to claim your deepest desire. Made with Unity, the game engine I've used the most."
 
-#: src/components/Header.tsx:121
+#: src/components/Header.tsx:136
 msgid "PORTFOLIO"
 msgstr "PORTFOLIO"
 
-#: src/components/Header.tsx:74
+#: src/components/Header.tsx:76
 msgid "Portrait"
 msgstr "Portrait"
 
-#: src/pages/AboutMe.tsx:51
+#: src/pages/AboutMe.tsx:81
 msgid "Post Degree on Game Development"
 msgstr "Post Degree on Game Development"
 
-#: src/components/Header.tsx:47
+#: src/components/Header.tsx:49
 msgid "Projects"
 msgstr "Projects"
 
@@ -283,17 +291,17 @@ msgstr "SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HE
 msgid "Score"
 msgstr "Score"
 
-#: src/components/Header.tsx:48
+#: src/components/Header.tsx:50
 msgid "Some of my work"
 msgstr "Some of my work"
 
 #: src/components/TabPanelJobs.tsx:113
 #: src/components/TabPanelJobs.tsx:173
-#: src/pages/AboutMe.tsx:98
+#: src/pages/AboutMe.tsx:128
 msgid "Spanish"
 msgstr "Spanish"
 
-#: src/components/Header.tsx:66
+#: src/components/Header.tsx:68
 msgid "Talk with me!"
 msgstr "Talk with me!"
 
@@ -313,7 +321,7 @@ msgstr "TOOLS"
 msgid "Typing Game"
 msgstr "Typing Game"
 
-#: src/components/Header.tsx:57
+#: src/components/Header.tsx:59
 msgid "UwU"
 msgstr "UwU"
 
@@ -321,11 +329,11 @@ msgstr "UwU"
 msgid "version control"
 msgstr "version control"
 
-#: src/pages/AboutMe.tsx:82
+#: src/pages/AboutMe.tsx:112
 msgid "Volleyball"
 msgstr "Volleyball"
 
-#: src/pages/AboutMe.tsx:85
+#: src/pages/AboutMe.tsx:115
 msgid "Warframe addict"
 msgstr "Warframe addict"
 

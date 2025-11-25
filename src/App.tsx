@@ -1,9 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import DarkModeToggle from "./components/TopRightPanel";
 import Welcome from "./components/Welcome";
-import MusicPlayer from "./components/MusicPlayer";
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 import { messages as enMessages } from "./locales/en/messages";
