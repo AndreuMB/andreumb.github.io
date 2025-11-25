@@ -8,6 +8,7 @@ import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 import { messages as enMessages } from "./locales/en/messages";
 import { messages as esMessages } from "./locales/es/messages";
+import TopPanel from "./components/TopPanel";
 
 i18n.load({
   en: enMessages,
@@ -16,13 +17,12 @@ i18n.load({
 
 console.log("default user language = " + navigator.language.split("-")[0]);
 i18n.activate(navigator.language.split("-")[0]);
-i18n.activate("es");
+// i18n.activate("es");
 
 function App() {
   return (
     <I18nProvider i18n={i18n}>
-      <MusicPlayer />
-      <DarkModeToggle />
+      <TopPanel></TopPanel>
       <Header />
       <Welcome />
       <Footer />

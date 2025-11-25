@@ -1,6 +1,7 @@
 import { Trans } from "@lingui/react/macro";
 import portrait from "/src/assets/portrait.jpg";
 import TabPanelJobs from "../components/TabPanelJobs";
+import { FaGithub, FaItchIo, FaLinkedin } from "react-icons/fa";
 
 interface AboutMeProps {
   onShowPortrait?: () => void;
@@ -9,23 +10,52 @@ interface AboutMeProps {
 function AboutMe({ onShowPortrait }: AboutMeProps) {
   return (
     <>
-      <header className="flex items-center border-b-2 border-secondary w-auto h-44 p-6 gap-10 text-lg">
-        <div
-          onClick={onShowPortrait}
-          className="relative h-full w-31 rounded-full overflow-hidden border border-secondary hover:scale-110 cursor-pointer"
-        >
-          <img
-            src={portrait}
-            alt="profile-picture"
-            className="h-full w-full object-cover"
-          />
-          <div className="h-full w-full bg-secondary-shadow absolute left-0 top-0 pointer-events-none" />
+      <header className="flex items-center border-b-2 border-secondary w-full h-44 p-4 px-6 justify-between">
+        <div className="flex gap-10 items-center h-full">
+          <div
+            onClick={onShowPortrait}
+            className="relative h-full w-34 rounded-full overflow-hidden border-2 border-secondary hover:scale-110 cursor-pointer"
+          >
+            <img
+              src={portrait}
+              alt="profile-picture"
+              className="h-full w-full object-cover"
+            />
+            <div className="h-full w-full bg-secondary-shadow absolute left-0 top-0 pointer-events-none" />
+          </div>
+          <div>
+            <h1 className="text-4xl">Andreu Micó</h1>
+            <div className="text-sm text-terciary hover:text-terciary-light">
+              <p>Web developer</p>
+              <p>Wannabe game developer</p>
+            </div>
+          </div>
         </div>
         <div>
-          <h1 className="text-4xl">Andreu Micó</h1>
-          <div className="text-sm text-terciary hover:text-terciary-light">
-            <p>Web developer</p>
-            <p>Wannabe game developer</p>
+          <div className="flex flex-col gap-3">
+            <a
+              target="_blank"
+              href="https://github.com/AndreuMB"
+              className="flex items-center gap-2"
+            >
+              <FaGithub className="text-xl" />
+              GitHub
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/andreumb"
+              className="flex items-center gap-2"
+            >
+              <FaLinkedin className="text-xl" />
+              LinkedIn
+            </a>
+            <a
+              target="_blank"
+              href="https://andreum.itch.io/"
+              className="flex items-center gap-2"
+            >
+              <FaItchIo className="text-xl" /> Itch.io
+            </a>
           </div>
         </div>
       </header>
