@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
 interface ProjectProps {
   name: string;
@@ -9,7 +9,7 @@ interface ProjectProps {
 function Project({ name, img, children, img_link }: ProjectProps) {
   return (
     <div className="bg-primary-light p-2">
-      <h3 className="text-secondary-light text-lg">{name}</h3>
+      <h3 className="text-secondary text-lg">{name}</h3>
       <div className="flex gap-4">
         <a
           target="_blank"

@@ -9,30 +9,34 @@
   --color-secondary-shadow: var(--secondary-shadow-color);
   --color-terciary: var(--terciary-color);
   --color-terciary-light: var(--terciary-light-color);
+  --color-text: var(--text-color);
 }
 
 .light {
   --primary-color: #9addff;
-  --primary-light-color: #4288d8c5;
+  --primary-light-color: #4288d8d5;
   --primary-shadow-color: #4288d845;
   --secondary-color: #2e2e3a;
   --secondary-light-color: #e8eef2;
   --secondary-shadow-color: #ffffff44;
-  --terciary-color: #fffea8;
+  --terciary-color: #fffdec;
+  --terciary-light-color: #fff700;
 
-  --terciary-light-color: #ffea00;
+  --text-color: #9addff;
 }
 
 .dark {
   --primary-color: #160d27;
-  --primary-light-color: #9f84cad0;
-  --primary-shadow-color: #6c66c86b;
+  --primary-light-color: #493b5fdd;
+  --primary-shadow-color: #bc93ffd0;
 
   --secondary-color: #ecdd7b;
   --secondary-light-color: #b9b9b9;
   --secondary-shadow-color: #ecdd7b43;
-  --terciary-color: #dca8fb;
+  --terciary-color: #cd4eba;
   --terciary-light-color: #ff89ed;
+
+  --text-color: #dca8fb;
 }
 
 body {
@@ -139,6 +143,11 @@ footer {
   list-style: none;
 }
 
-.about-me-body span {
-  color: var(--secondary-color);
+.about-me-body {
+  h3 {
+    color: var(--secondary-color);
+  }
+  span {
+    color: var(--secondary-color);
+  }
 }

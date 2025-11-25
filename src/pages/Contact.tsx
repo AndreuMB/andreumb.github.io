@@ -8,7 +8,7 @@ function Contact() {
         <Trans>Connect with me!</Trans>
       </h1>
       <div className="marquee text-9xl bg-secondary">
-        <p className="bg-secondary">
+        <p className="bg-secondary text-primary">
           <Trans>
             SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO!
             SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO! SAY HELLO!

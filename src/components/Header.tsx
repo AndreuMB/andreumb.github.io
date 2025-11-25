@@ -172,7 +172,7 @@ function Header() {
                     height: !entry.size ? windowSize.height : 480,
                   }}
                 >
-                  <div className="handle flex justify-between px-1 border-secondary border-b bg-secondary select-none uppercase">
+                  <div className="handle flex justify-between px-1 border-secondary border-b bg-secondary select-none uppercase text-primary">
                     <p>
                       <TransD id={entry.title.id} />
                     </p>

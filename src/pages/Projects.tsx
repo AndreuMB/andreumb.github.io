@@ -57,7 +57,7 @@ function Projects() {
 
   return (
     <div className="p-5 flex flex-col gap-6">
-      <div className="flex gap-6 skills-list">
+      <div className="flex gap-6 skills-list text-primary">
         <div className="w-1/2">
           <h2>
             <Trans>TOOLS</Trans>

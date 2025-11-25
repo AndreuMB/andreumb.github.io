@@ -36,9 +36,9 @@ function Fun() {
     "Creé la música de fondo para esta web, puedes activarla en el icóno de arriba a la izquierda.",
     "He sido entrenador de voleibol en mi pueblo durante algunos años.",
     "Me encanta tocar la guitarra y el piano entre otros instrumentos.",
-    "Tengo una cuenta de Instagram donde subo mis dibujos llamada liky00_.",
-    "En una fiesta de un amigo, toqué la guitarra eléctrica con una banda.",
-    "Pinté mi guitarra de color morado hace un tiempo, fue más difícil de lo que parece.",
+    "Tengo una cuenta en Instagram donde subo mis dibujos llamada liky00_.",
+    "En una fiesta de un amigo toqué la guitarra eléctrica con una banda.",
+    "Pinté mi guitarra de color morado, mucho más difícil de lo que parece.",
   ];
 
   const [score, setScore] = useState(0);
@@ -132,7 +132,7 @@ function Fun() {
 
     // handle create element
     const color =
-      currentChar === charValue ? "text-primary" : "text-terciary-light";
+      currentChar === charValue ? "text-terciary" : "text-terciary-light";
     const charElement = createElement(
       "span",
       { className: color, key: value.length },
@@ -184,7 +184,7 @@ function Fun() {
           <h1>
             <Trans>Typing Game</Trans>
           </h1>
-          <div className="mx-auto px-2 bg-primary text-secondary">
+          <div className="mx-auto px-2 border border-terciary text-secondary">
             <div>
               <Trans>Score</Trans>: {score}
             </div>
@@ -221,7 +221,7 @@ function Fun() {
           onBlur={stop}
           rows={4}
           ref={textareaRef}
-          className="quote-input bg-secondary w-full"
+          className="quote-input bg-secondary w-full text-primary"
           onChange={(e) => checkTyping(e)}
           onKeyDown={(e) => checkBackspace(e)}
         ></textarea>
