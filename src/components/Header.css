@@ -1,5 +1,4 @@
 header {
-  /* color: var(--primary-color); */
   color: var(--text-color);
 }
 
@@ -27,7 +26,6 @@ button .description {
 
 button:hover .description {
   max-height: 100px;
-  /* You can adjust based on expected content size */
   opacity: 1;
 }
 

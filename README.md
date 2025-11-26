@@ -29,4 +29,8 @@ Check it out here: [andreumb.github.io](https://andreumb.github.io/)
 2. npm run compile
 3. Write the translations on /src/locales
 
-## Github pages
+## GitHub Pages deploy
+
+Ref: [react-gh-pages](https://github.com/gitname/react-gh-pages)
+
+Just run `npm run deploy`.

@@ -3,7 +3,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { Trans } from "@lingui/react/macro";
-import { msg, type t } from "@lingui/core/macro";
+import { msg } from "@lingui/core/macro";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -27,17 +27,10 @@ function CustomTabPanel(props: TabPanelProps) {
   );
 }
 
-// function a11yProps(index: number) {
-//   return {
-//     id: `simple-tab-${index}`,
-//     "aria-controls": `simple-tabpanel-${index}`,
-//   };
-// }
-
 export default function TabPanelJobs() {
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 

@@ -49,7 +49,6 @@ function TopRightPanel() {
       <div className="w-dvw h-dvh absolute top-0 left-0 -z-10">
         {darkMode ? <SpaceBackgroundOwO /> : <SkyBackgroundUwU />}
       </div>
-      {/*  absolute top-3 right-3  */}
       <div className="flex gap-2 h-full">
         {/* toggle language */}
         <LanguageToggleButton darkMode={darkMode} />

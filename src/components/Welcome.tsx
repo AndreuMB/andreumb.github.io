@@ -30,7 +30,6 @@ function Welcome() {
   );
 
   const [lang, setLang] = useState(i18n.locale);
-  // const intervalRef = useRef<number | null>(null);
 
   useEffect(() => {
     setInterval(function () {

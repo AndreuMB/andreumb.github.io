@@ -16,9 +16,6 @@ function MusicPlayer() {
     playClick();
     isPlaying ? stop() : playMusic();
     setIsPlaying(!isPlaying);
-
-    // playClick.arguments
-    // stop()
   };
 
   const handleChange = (_event: Event, newValue: number) => {
@@ -27,7 +24,6 @@ function MusicPlayer() {
   };
 
   return (
-    // absolute top-3 left-3 items-center justify-center
     <div className="flex flex-row gap-6">
       <button
         className={`rounded-lg ${isPlaying ? "bg-secondary!" : ""}`}

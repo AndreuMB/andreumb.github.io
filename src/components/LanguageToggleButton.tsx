@@ -42,7 +42,6 @@ export default function LanguageToggleButton(params: { darkMode: boolean }) {
         size="small"
         color="primary"
         className="flex flex-row items-center *:text-secondary! *:border-secondary!"
-        // className="bg-secondary! flex flex-row items-center *:text-primary!"
         value={language}
         classes={{ selected: "bg-red-500!" }}
         exclusive
@@ -54,9 +53,6 @@ export default function LanguageToggleButton(params: { darkMode: boolean }) {
             width: "30px",
           },
         }}
-        // "& .MuiTabs-indicator": {
-        //       backgroundColor: "yellow",
-        //     },
       >
         <ToggleButton value="es">ES</ToggleButton>
         <ToggleButton value="en">EN</ToggleButton>

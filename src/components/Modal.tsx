@@ -10,12 +10,9 @@ const style = {
   position: "absolute",
   bottom: 0,
   left: "50%",
-  //   top: "70vh",
   transform: "translate(-50%, -50%)",
   width: "86%",
   maxWidth: 400,
-  //   bgcolor: "background.paper",
-  //   border: "2px solid #000",
   boxShadow: 24,
   p: 2,
 };
