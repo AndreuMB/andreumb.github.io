@@ -3,7 +3,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { Trans } from "@lingui/react/macro";
-import { msg } from "@lingui/core/macro";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -56,10 +55,8 @@ export default function TabPanelJobs() {
             },
           }}
         >
-          <Tab label={msg`Web Developer`.message} />
-          <Tab label={msg`Game Developer`.message} />
-          {/* <Tab label="Game Developer" {...a11yProps(0)} /> */}
-          {/* <Tab label="Game Developer" {...a11yProps(1)} /> */}
+          <Tab label='Web Developer' />
+          <Tab label='Game Developer' />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>

@@ -24,6 +24,7 @@ import TransitionsModal from "./Modal";
 
 interface NavEntry {
   ref: RefObject<null>;
+  id: string;
   title: MessageDescriptor;
   description: MessageDescriptor;
   hide: boolean;
@@ -37,6 +38,7 @@ function Header() {
   const [navEntries, setNavEntries] = useState<NavEntry[]>([
     {
       ref: useRef(null),
+      id: "About me",
       title: msg`About me`,
       description: msg`An honest presentation :)`,
       hide: true,
@@ -46,6 +48,7 @@ function Header() {
     },
     {
       ref: useRef(null),
+      id: "Projects",
       title: msg`Projects`,
       description: msg`Some of my work`,
       hide: true,
@@ -55,6 +58,7 @@ function Header() {
     },
     {
       ref: useRef(null),
+      id: "Fun",
       title: msg`Fun`,
       description: msg`UwU`,
       hide: true,
@@ -64,6 +68,7 @@ function Header() {
     },
     {
       ref: useRef(null),
+      id: "Contact",
       title: msg`Contact`,
       description: msg`Talk with me!`,
       hide: true,
@@ -73,6 +78,7 @@ function Header() {
     },
     {
       ref: useRef(null),
+      id: "Portrait",
       title: msg`Portrait`,
       description: msg``,
       hide: true,
@@ -102,8 +108,7 @@ function Header() {
   };
 
   const showPortrait = () => {
-    const entry =
-      navEntries.find((e) => e.title.message === "Portrait") || navEntries[0];
+    const entry = navEntries.find((e) => e.id === "Portrait") || navEntries[0];
     handleEntryWindows(entry);
     handleWindowZindex(entry);
   };
