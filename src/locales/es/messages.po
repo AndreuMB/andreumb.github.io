@@ -14,11 +14,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: src/components/Header.tsx:77
+#: src/components/Header.tsx:83
 msgid "/+Z5u4"
 msgstr ""
 
-#: src/components/TabPanelJobs.tsx:84
+#: src/components/TabPanelJobs.tsx:74
 msgid " like Next.js, NestJS and Vue.js"
 msgstr " como Next.js, NestJS y Vue.js."
 
@@ -26,7 +26,7 @@ msgstr " como Next.js, NestJS y Vue.js."
 #~ msgid " like Next.js, NestJS and Vue.js."
 #~ msgstr " como Next.js, NestJS y Vue.js."
 
-#: src/components/TabPanelJobs.tsx:98
+#: src/components/TabPanelJobs.tsx:88
 msgid " softwares like Git to keep projects smooth and organized"
 msgstr ""
 
@@ -34,15 +34,15 @@ msgstr ""
 #~ msgid " softwares like Git to keep projects smooth and organized."
 #~ msgstr " como Git para mantener mis proyectos organizados."
 
-#: src/components/Header.tsx:40
+#: src/components/Header.tsx:42
 msgid "About me"
 msgstr "Sobre mí"
 
-#: src/components/Header.tsx:41
+#: src/components/Header.tsx:43
 msgid "An honest presentation :)"
 msgstr "Una presentación honesta :)"
 
-#: src/components/TabPanelJobs.tsx:89
+#: src/components/TabPanelJobs.tsx:79
 #: src/pages/AboutMe.tsx:130
 msgid "and"
 msgstr "y"
@@ -71,7 +71,7 @@ msgstr "Valenciano"
 msgid "Click the images to visit their site!"
 msgstr "¡Haz clic en las imágenes para visitar su web!"
 
-#: src/components/TabPanelJobs.tsx:94
+#: src/components/TabPanelJobs.tsx:84
 msgid "Comfortable using "
 msgstr "Estoy cómodo usando programas de "
 
@@ -79,7 +79,7 @@ msgstr "Estoy cómodo usando programas de "
 msgid "Connect with me!"
 msgstr "Conecta conmigo!"
 
-#: src/components/Header.tsx:67
+#: src/components/Header.tsx:72
 msgid "Contact"
 msgstr "Contacto"
 
@@ -87,7 +87,7 @@ msgstr "Contacto"
 msgid "Create and share music sheets with the world. This was my final degree project in 2022, and I was very proud of it."
 msgstr "Crea y comparte partituras con el mundo. Este fue mi proyecto final de grado en 2022, y estaba muy orgulloso de él."
 
-#: src/components/TabPanelJobs.tsx:91
+#: src/components/TabPanelJobs.tsx:81
 msgid "databases, including Firebase and Supabase."
 msgstr "incluyendo Firebase y Supabase."
 
@@ -119,17 +119,17 @@ msgstr "Fácil! Haz clic en el cuadro y comienza a escribir la frase indicada. H
 msgid "Email me!"
 msgstr "Contáctame!"
 
-#: src/components/TabPanelJobs.tsx:120
-#: src/components/TabPanelJobs.tsx:180
+#: src/components/TabPanelJobs.tsx:110
+#: src/components/TabPanelJobs.tsx:170
 #: src/pages/AboutMe.tsx:136
 msgid "English"
 msgstr "Inglés"
 
-#: src/components/TabPanelJobs.tsx:157
+#: src/components/TabPanelJobs.tsx:147
 msgid "Even if my focus is in programming I made models in <0>Blender</0> and texture them with Blender/Substance"
 msgstr "Aunque me centre en programación, he creado modelos en <0>Blender</0> y texturizado usando Blender/Substance"
 
-#: src/components/TabPanelJobs.tsx:77
+#: src/components/TabPanelJobs.tsx:67
 msgid "frontend development"
 msgstr "desarrollo frontend"
 
@@ -137,13 +137,13 @@ msgstr "desarrollo frontend"
 #~ msgid "frontend development "
 #~ msgstr "desarrollo frontend "
 
-#: src/components/Header.tsx:58
+#: src/components/Header.tsx:62
 msgid "Fun"
 msgstr "Aburrido?"
 
 #: src/components/TabPanelJobs.tsx:67
-msgid "Game Developer"
-msgstr ""
+#~ msgid "Game Developer"
+#~ msgstr ""
 
 #: src/pages/AboutMe.tsx:103
 msgid "Game development"
@@ -171,7 +171,7 @@ msgstr "aquí"
 msgid "Hey! I'm Andreu, a web developer and a game developer in process!"
 msgstr "Hola! Soy Andreu, desarrollador web y de videojuegos."
 
-#: src/components/Welcome.tsx:55
+#: src/components/Welcome.tsx:54
 msgid "Hi! I'm Andreu"
 msgstr "Hola! Soy Andreu"
 
@@ -183,7 +183,7 @@ msgstr "Formación Superior en Desarrollo Web"
 msgid "Hope you have fun!"
 msgstr "Aprendiste algo interesante?"
 
-#: src/components/TabPanelJobs.tsx:143
+#: src/components/TabPanelJobs.tsx:133
 msgid "I did <0>multiplayer</0> projects using Netcode and <1>VR/AR</1> projects with XRTools and Vuforia"
 msgstr "He trabajado en proyectos <0>multijugador</0> usando Netcode y en proyectos de <1>VR/AR</1> con XR Tools y Vuforia"
 
@@ -195,15 +195,15 @@ msgstr "Tengo experiencia en el desarrollo de aplicaciones web y juegos multipla
 msgid "I have native fluency in"
 msgstr "Mis idiomas nativos son "
 
-#: src/components/TabPanelJobs.tsx:136
+#: src/components/TabPanelJobs.tsx:126
 msgid "I have some projects on <0>Godot</0> too, where I learned the basics of it and GDscript"
 msgstr "También tengo proyectos en <0>Godot</0>, donde aprendí sus bases y GDScript"
 
-#: src/components/TabPanelJobs.tsx:82
+#: src/components/TabPanelJobs.tsx:72
 msgid "I know my things around modern "
 msgstr "Me manejo en "
 
-#: src/components/Modal.tsx:54
+#: src/components/Modal.tsx:51
 msgid "I strongly recommend to use a device whith a larger screen"
 msgstr "Recomiendo utilizar un dispositivo con una pantalla más amplia"
 
@@ -211,7 +211,7 @@ msgstr "Recomiendo utilizar un dispositivo con una pantalla más amplia"
 msgid "I used their official tutorial game, end up preatty well. You can even check the trailer I made"
 msgstr "Usé el juego que utilizan como guia para aprender y quedó bastante bien. Incluso puedes ver el tráiler que hice"
 
-#: src/components/TabPanelJobs.tsx:87
+#: src/components/TabPanelJobs.tsx:77
 msgid "I've handled both "
 msgstr "He trabajado con bases de datos "
 
@@ -227,7 +227,7 @@ msgstr "Salta sobre los Creeps y aplástalos, ¡pero no dejes que ellos te aplas
 msgid "LANGUAGE PROFICIENCY"
 msgstr "IDIOMAS"
 
-#: src/components/Modal.tsx:51
+#: src/components/Modal.tsx:48
 msgid "Mobile Device Detected"
 msgstr "Dispositivo móvil detectado"
 
@@ -235,7 +235,7 @@ msgstr "Dispositivo móvil detectado"
 #~ msgid "Most of my experience is in "
 #~ msgstr "La mayor parte de mi experiencia es con"
 
-#: src/components/TabPanelJobs.tsx:129
+#: src/components/TabPanelJobs.tsx:119
 msgid "Most of my experience is in <0>Unity</0> where I developed all kind of games"
 msgstr "La mayor parte de mi experiencia es con <0>Unity</0>, donde desarrollé todo tipo de juegos"
 
@@ -255,11 +255,11 @@ msgstr "Disfruto tocando la guitarra"
 msgid "Play as a dwarf and farm crystals to claim your deepest desire. Made with Unity, the game engine I've used the most."
 msgstr "Juega como un enano y cultiva cristales para cumplir tu deseo más profundo. Hecho con Unity, el motor de juego que más he usado."
 
-#: src/components/Header.tsx:136
+#: src/components/Header.tsx:141
 msgid "PORTFOLIO"
 msgstr "PORTAFOLIO"
 
-#: src/components/Header.tsx:76
+#: src/components/Header.tsx:82
 msgid "Portrait"
 msgstr "Retrato"
 
@@ -267,7 +267,7 @@ msgstr "Retrato"
 msgid "Post Degree on Game Development"
 msgstr "Especialización en desarrollo de videojuegos"
 
-#: src/components/Header.tsx:49
+#: src/components/Header.tsx:52
 msgid "Projects"
 msgstr "Proyectos"
 
@@ -279,21 +279,21 @@ msgstr "¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI HOLA! ¡DI H
 msgid "Score"
 msgstr "Puntuación"
 
-#: src/components/Header.tsx:50
+#: src/components/Header.tsx:53
 msgid "Some of my work"
 msgstr "Algunos de mis trabajos"
 
-#: src/components/TabPanelJobs.tsx:113
-#: src/components/TabPanelJobs.tsx:173
+#: src/components/TabPanelJobs.tsx:103
+#: src/components/TabPanelJobs.tsx:163
 #: src/pages/AboutMe.tsx:128
 msgid "Spanish"
 msgstr "Español"
 
-#: src/components/Header.tsx:68
+#: src/components/Header.tsx:73
 msgid "Talk with me!"
 msgstr "¡Habla conmigo!"
 
-#: src/components/TabPanelJobs.tsx:75
+#: src/components/TabPanelJobs.tsx:65
 msgid "This days I am focused on "
 msgstr "Actualmente estoy centrado en "
 
@@ -309,11 +309,11 @@ msgstr "HERRAMIENTAS"
 msgid "Typing Game"
 msgstr ""
 
-#: src/components/Header.tsx:59
+#: src/components/Header.tsx:63
 msgid "UwU"
 msgstr "UwU"
 
-#: src/components/TabPanelJobs.tsx:96
+#: src/components/TabPanelJobs.tsx:86
 msgid "version control"
 msgstr "control de versiones"
 
@@ -326,8 +326,8 @@ msgid "Warframe addict"
 msgstr "Proplayer de Warframe"
 
 #: src/components/TabPanelJobs.tsx:66
-msgid "Web Developer"
-msgstr ""
+#~ msgid "Web Developer"
+#~ msgstr ""
 
 #: src/components/TabPanelJobs.tsx:110
 #~ msgid "where I developed all kind of games"
@@ -337,11 +337,11 @@ msgstr ""
 msgid "You can check all the projects on my"
 msgstr "Puedes ver todos los proyectos en mi"
 
-#: src/components/TabPanelJobs.tsx:166
+#: src/components/TabPanelJobs.tsx:156
 msgid "You can check my Game Developer resume here!"
 msgstr "Puedes leer mi CV de Game Developer aquí!"
 
-#: src/components/TabPanelJobs.tsx:106
+#: src/components/TabPanelJobs.tsx:96
 msgid "You can check my Web Developer resume here!"
 msgstr "Puedes leer mi CV de Web Developer aquí!"
 
