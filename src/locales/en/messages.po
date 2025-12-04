@@ -271,7 +271,7 @@ msgstr "Passionate guitar player"
 msgid "Play as a dwarf and farm crystals to claim your deepest desire. Made with Unity, the game engine I've used the most."
 msgstr "Play as a dwarf and farm crystals to claim your deepest desire. Made with Unity, the game engine I've used the most."
 
-#: src/components/Header.tsx:141
+#: src/components/Header.tsx:143
 msgid "PORTFOLIO"
 msgstr "PORTFOLIO"
 
