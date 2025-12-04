@@ -134,6 +134,8 @@ function Header() {
   const [open, setOpen] = useState(false);
   const onClose = () => setOpen(false);
 
+  const PHONE_WINDOWS_SPAWN_HEIGHT = 200;
+
   return (
     <header className="mt-12">
       <TransitionsModal open={open} onClose={onClose}></TransitionsModal>
@@ -174,7 +176,10 @@ function Header() {
                             (window.innerWidth - windowSize.width - 60 - 400) +
                             400
                         ),
-                  y: window.innerWidth < widthBreak ? 400 : -300,
+                  y:
+                    window.innerWidth < widthBreak
+                      ? PHONE_WINDOWS_SPAWN_HEIGHT
+                      : -300,
                 }}
                 nodeRef={entry.ref}
               >
